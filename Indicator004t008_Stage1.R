@@ -9,4 +9,37 @@
 # The resulting file can afterwards be joined with the cumulative
 # (time-series) dataset.
 
-require(tcltk)<br>mydialog <- function(){<br><br>       xvar <- tclVar("")<br>       yvar <- tclVar("")<br>       zvar <- tclVar("")<br><br>       tt <- tktoplevel()<br>       tkwm.title(tt,"MYTEST")<br>       x.entry <- tkentry(tt, textvariable=xvar)<br>       y.entry <- tkentry(tt, textvariable=yvar)<br>       z.entry <- tkentry(tt, textvariable=zvar)<br><br>       reset <- function() {<br>         tclvalue(xvar)<-""<br>         tclvalue(yvar)<-""<br>         tclvalue(zvar)<-""<br>        }<br><br>       reset.but <- tkbutton(tt, text="Reset", command=reset)<br><br>       submit <- function() {<br>         x <- as.numeric(tclvalue(xvar))<br>         y <- as.numeric(tclvalue(yvar))<br>         z <- as.numeric(tclvalue(zvar))<br>         tkmessageBox(message=paste("x + y + z = ", x+y+z, ""))<br>       }<br>       submit.but <- tkbutton(tt, text="submit", command=submit)<br>       <br>       quit.but <- tkbutton(tt, text = "Close Session", <br>           command = function() {<br>           q(save = "no")<br>           tkdestroy(tt)<br>           }<br>        )<br><br>       tkgrid(tklabel(tt,text="Put your variables.."),columnspan=3, pady = 10)<br>       tkgrid(tklabel(tt,text="x variable"), x.entry, pady= 10, padx= 10)<br>       tkgrid(tklabel(tt,text="y variable"), y.entry, pady= 10, padx= 10)<br>       tkgrid(tklabel(tt,text="z variable"), z.entry, pady= 10, padx= 10)<br>       tkgrid(submit.but, reset.but, quit.but, pady= 10, padx= 10)<br><br>    }<br><br>mydialog()<br>
+require(tcltk)mydialog <- function(){
+xvar <- tclVar("")
+yvar <- tclVar("")
+zvar <- tclVar("")
+tt <- tktoplevel()
+tkwm.title(tt,"MYTEST")
+x.entry <- tkentry(tt, textvariable=xvar)
+y.entry <- tkentry(tt, textvariable=yvar)
+z.entry <- tkentry(tt, textvariable=zvar)
+reset <- function() {
+tclvalue(xvar)<-""
+tclvalue(yvar)<-""
+tclvalue(zvar)<-""
+}
+reset.but <- tkbutton(tt, text="Reset", command=reset)
+submit <- function() {
+x <- as.numeric(tclvalue(xvar))
+y <- as.numeric(tclvalue(yvar))
+z <- as.numeric(tclvalue(zvar))
+tkmessageBox(message=paste("x + y + z = ", x+y+z, ""))
+}
+submit.but <- tkbutton(tt, text="submit", command=submit)
+quit.but <- tkbutton(tt, text = "Close Session",
+command = function() {
+q(save = "no")
+tkdestroy(tt)
+}
+)
+tkgrid(tklabel(tt,text="Put your variables.."),columnspan=3, pady = 10)
+tkgrid(tklabel(tt,text="x variable"), x.entry, pady= 10, padx= 10)
+tkgrid(tklabel(tt,text="y variable"), y.entry, pady= 10, padx= 10)
+tkgrid(tklabel(tt,text="z variable"), z.entry, pady= 10, padx= 10)
+tkgrid(submit.but, reset.but, quit.but, pady= 10, padx= 10)
+}mydialog()

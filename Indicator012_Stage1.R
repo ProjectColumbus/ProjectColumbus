@@ -40,16 +40,17 @@ dats2$year <- ifelse( as.numeric(gsub("\\(|\\)", "", dats2$year)) < 30,
 gsub("\\(([0-9]{2})\\)", "20\\1", dats2$year), gsub("\\(([0-9]{2})\\)", 
 "19\\1", dats2$year))
 
-dats3 <- dats2 
+dats3 <- dats2
 
 dats3 <- split(dats3, dats3$level)
 
-dats3$Doctor <- aggregate(dats3$Doctor[,-1:-4], by = dats3$Doctor[,1:4], 
-FUN = sum, na.rm = T, sort = F)
+dats3$Doctor <- aggregate(dats3$Doctor[,-c(1:4)], by = 
+dats3$Doctor[,1:4], FUN = sum, na.rm = T, sort = F)
 
-dats3$Doctor$mean <- ifelse( dats3$Doctor$number == 0, 0, 
-dats3$Doctor$sum / dats3$Doctor$number)
 dats3 <- do.call(rbind, dats3)
 rownames(dats3) <- NULL
 
-write.csv( dats3, "./Stage3/results_indicator012_stage3.csv", row.names = F)
+save(dats3, file = "./Stage3/database_indicator012_stage3.RData")
+
+write.csv( dats3[,-c(5,7)], "./Stage3/results_indicator012_stage3.csv", 
+row.names = F)
