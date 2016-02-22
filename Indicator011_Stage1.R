@@ -1,26 +1,47 @@
+# Script for DDEC Indicator 011
+# Author: Gamaliel Lamboy Rodríguez
+# Version: 1.0
+# Description:
+# This script partially automatizes the obtainment of Indicator 010 from its 
+# database. It assumes an incremental updating of the data, and that the most 
+# recent year of database is being manipulated. This indicator contains the
+# employment compensation data, which are a measure of the labor costs in the
+# intangible assets economy.
+
+# The data are organized in small groups of rows, each pertaining to a 
+# particular NAICS sector. These NAICS groups contain:
+
+# 1) Total Net Income -- unused
+# 2) Employee Compensation -- 
+
+# Preload additional packages to use.
 library("openxlsx")
 
+# Initial parameters for reading the file.
 PARAMS <- list(
 startrow=1,
 sheet=1,
-rownames = FALSE,
-colnames = FALSE,
+rowNames = FALSE,
+colNames = FALSE,
 cols = c(1:12,14)
-
 )
 
 attach(PARAMS)
 
-dats1 <- read.xlsx( "./Original_Data/Indicator 011 Database.xlsx", startRow =
-startrow, sheet = sheet, rowNames = rownames, colNames = colnames, cols = cols)
+# Read the original data.
+dats1 <- do.call( read.xlsx, c( list( PARAMS, xlsxFile = 
+"./Original_Data/Indicator 011 Database.xlsx")))
 
 detach(PARAMS)
 
-head(dats1)
-
+# Eliminate all rows not containing NAICS codes.
 dats1_naics <- grep("(^[0-9]{4}$)|(^[0-9]{2}\\-[0-9]{2})|(^[0-9]{2}$)", 
 dats1[,1])
+
+# Locate the rows of the employee compensation data.
 dats1_comp <- grep("Compensación a empleados", dats1[,2])
+# Select the NAICS closest to the employee compensation data. This procedure is
+# necessary since the data are 
 dats1_dist <- sapply(dats1_naics, function(x) 
 {
     min(dats1_comp[dats1_comp > x] - x)

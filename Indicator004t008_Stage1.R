@@ -9,37 +9,28 @@
 # The resulting file can afterwards be joined with the cumulative
 # (time-series) dataset.
 
-require(tcltk)mydialog <- function(){
-xvar <- tclVar("")
-yvar <- tclVar("")
-zvar <- tclVar("")
-tt <- tktoplevel()
-tkwm.title(tt,"MYTEST")
-x.entry <- tkentry(tt, textvariable=xvar)
-y.entry <- tkentry(tt, textvariable=yvar)
-z.entry <- tkentry(tt, textvariable=zvar)
-reset <- function() {
-tclvalue(xvar)<-""
-tclvalue(yvar)<-""
-tclvalue(zvar)<-""
-}
-reset.but <- tkbutton(tt, text="Reset", command=reset)
-submit <- function() {
-x <- as.numeric(tclvalue(xvar))
-y <- as.numeric(tclvalue(yvar))
-z <- as.numeric(tclvalue(zvar))
-tkmessageBox(message=paste("x + y + z = ", x+y+z, ""))
-}
-submit.but <- tkbutton(tt, text="submit", command=submit)
-quit.but <- tkbutton(tt, text = "Close Session",
-command = function() {
-q(save = "no")
-tkdestroy(tt)
-}
-)
-tkgrid(tklabel(tt,text="Put your variables.."),columnspan=3, pady = 10)
-tkgrid(tklabel(tt,text="x variable"), x.entry, pady= 10, padx= 10)
-tkgrid(tklabel(tt,text="y variable"), y.entry, pady= 10, padx= 10)
-tkgrid(tklabel(tt,text="z variable"), z.entry, pady= 10, padx= 10)
-tkgrid(submit.but, reset.but, quit.but, pady= 10, padx= 10)
-}mydialog()
+library("openxlsx")
+
+wb <- createWorkbook()
+
+dats1 <- data.frame( concept = c("Total", "Private (Services)", 
+"Public and Nonprofit"), total_amount = rep(NA,3))
+
+dats1c1 <- data.frame( NAICS = rep("", 10), amount = rep("", 10), pct_manuf = 
+rep( 1, 10), pct_services = paste("(1 - ", "C", 1:10+1L, sep = ""), 
+stringsAsFactors = F)
+
+class( dats1c1$pct_services) <- c( class( dats1c1$pct_services), "formula")
+
+formtot <- paste("SUMPRODUCT( \'private_sector\'!C", ,
+"\'private_sector\'!E",
+
+addWorksheet(wb, "private_sector")
+addWorksheet(wb, "total_amount")
+
+addStyle(wb, sheet = 1, style = createStyle( numFmt = "#,##0.0%"), 
+rows = 1:10 + 1L, cols = 3)
+addStyle(wb, sheet = 1, style = createStyle( numFmt = "#,##0.0%"), 
+rows = 1:10 + 1L, cols = 4)
+
+writeData(wb, sheet = 1, x = dats1c1)
