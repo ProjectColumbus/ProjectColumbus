@@ -1,0 +1,25 @@
+"","naics_code","naics_title","occupational_code","occupational_title","total_employees"
+"1",517,"Telecommunications","11-3021","Computer and Information Systems Managers",0.00626304801670146
+"2",517,"Telecommunications","15-1121","Computer Systems Analysts",0
+"3",517,"Telecommunications","15-1131","Computer Programmers",0.00521920668058455
+"4",517,"Telecommunications","15-1141","Database Administrators",0.00417536534446764
+"5",517,"Telecommunications","15-1142","Network and Computer Systems Administrators",0.00835073068893528
+"6",517,"Telecommunications","15-1151","Computer User Support Specialists",0.022964509394572
+"7",517,"Telecommunications","15-1152","Computer Network Support Specialists",0.0104384133611691
+"8",517,"Telecommunications","43-9021","Data Entry Keyers",0.00417536534446764
+"9",518,"Data Processing, Hosting, and Related Services","43-9021","Data Entry Keyers",0.0927835051546392
+"10",5415,"Computer Systems Design and Related Services","11-3021","Computer and Information Systems Managers",0.0113314447592068
+"11",5415,"Computer Systems Design and Related Services","15-1121","Computer Systems Analysts",0.0453257790368272
+"12",5415,"Computer Systems Design and Related Services","15-1131","Computer Programmers",0.101983002832861
+"13",5415,"Computer Systems Design and Related Services","15-1132","Software Developers, Applications",0.028328611898017
+"14",5415,"Computer Systems Design and Related Services","15-1133","Software Developers, Systems Software",0.0084985835694051
+"15",5415,"Computer Systems Design and Related Services","15-1143","Computer Network Architects",0
+"16",5415,"Computer Systems Design and Related Services","15-1151","Computer User Support Specialists",0.0651558073654391
+"17",5415,"Computer Systems Design and Related Services","15-1152","Computer Network Support Specialists",0.0169971671388102
+"18",5415,"Computer Systems Design and Related Services","17-2061","Computer Hardware Engineers",0
+"19",5416,"Management, Scientific, and Technical Consulting Services","15-1122","Information Security Analysts",0.00829187396351575
+"20",5416,"Management, Scientific, and Technical Consulting Services","15-1132","Software Developers, Applications",0.0066334991708126
+"21",5416,"Management, Scientific, and Technical Consulting Services","15-1143","Computer Network Architects",0
+"22",5416,"Management, Scientific, and Technical Consulting Services","15-1151","Computer User Support Specialists",0.0315091210613599
+"23",6221,"General Medical and Surgical Hospitals","15-1151","Computer User Support Specialists",0.00191570881226054
+"24",6221,"General Medical and Surgical Hospitals","43-9021","Data Entry Keyers",0.0028735632183908
