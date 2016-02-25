@@ -1,5 +1,20 @@
+# Script for DDEC Indicator 023
+# Author: Gamaliel Lamboy Rodríguez
+# Version: 1.0
+# Description:
+# This script partially automatizes the obtainment of Indicator 023 from its
+# database. It assumes an incremental updating of the data, and that the most
+# recent year of database is being manipulated. Time trends are handled by a
+# master script. However, the resulting files are created so that they can
+# afterwards be merged in a cumulative (time-series) dataset.
+# The following script retrieves the number of economic firms currently
+# operating in the economy.
+
+# Preload additional packages to use.
 library("tcltk")
 
+# Data is obtained directly from the Indicator 002 Results, for obvious
+# reasons.
 load("../Indicator002/Stage3/database_indicator002_stage3.RData")
 
 # Beginning of Name Validation
@@ -11,7 +26,7 @@ load("../Indicator002/Stage3/database_indicator002_stage3.RData")
 # of VERY simple GUI for information is done using the "tcltk" package in order
 # to warn the user of these needed changes. This can be refined later.
 
-# Create a Data Frame with the Following Columns.
+# Create a data.frame with the following columns:
 # fix - the firm names to be replaced by user input. Unchanged values are set
 # as NA.
 # legal_corporate_name - the original name of the firm.
@@ -41,7 +56,7 @@ edit_done <- tk_messageBox(caption = "Waiting for User Input", message =
 paste( gsub("a\n", " ", "Large firms often create multiple legal structures toa
 organize their establishments. However, for economic purposes they should bea
 considered a single entity. Please replace the NAs in \"fix\" of thea
-legal/corporate names that will be considered as a single firm with a unique
+legal/corporate names that will be considered as a single firm with a uniquea
 identifier. For example:
 
 fix   legal_corporate_name  trade_name
@@ -55,16 +70,17 @@ this case, a similar process must be done relative to the trade name ora
 
 Click OK when both legal/corporate names and trade names have been reviseda
 in:\n"), paste( getwd(), "/Stage2/name_list900_cleanup.csv", sep = ""), 
-type = "ok", icon = "info")
+type = "ok", icon = "info"))
 
-# Read the output files from the User
+# Read the output files from the user
 fix_names <- read.csv( "./Stage2/name_list900_cleanup.csv", 
 stringsAsFactors = FALSE, row.names = NULL, colClasses = c( "character",
 sapply(name_list900, class)[-1]) )
 
 # Check for consistency in the data frames. Consistent data frames are those
 # which have numerical equality in the non-modifiable data, and have the same
-# attributes as the original data frames. The inputs
+# attributes as the original data frames. Inputs must be placed in ./Stage2
+# in order to be read.
 checkStr <- function( data1, data2)
 {
     checklist <- list( 
@@ -89,7 +105,6 @@ while( any(check_str == FALSE))
     tklabel(warning, textvariable = tclVar(paste( "Error: file structure not ",
     "equal. Please Check: ", paste( names( check_str[ which( check_str == 
     TRUE ) ] ), collapse = " and "), sep = "" ))) -> warning$env$label
-#+ Place the text inside the tktoplevel() widget.
     tkgrid( warning$env$label, padx = 20, pady = 15)
     warning
 #+ 'done' captures the tcl states, and assigns them to specific "codes", which
@@ -129,9 +144,10 @@ if(any(nochange == TRUE))
     " Using originals.", sep = ""), type = "ok", icon = "info")
 }
 
-# Apply the changed names (if any) to legal_corporate_name.
+Apply the changed names (if any) to legal_corporate_name.
 x$legal_corporate_name[ match( fix_names$legal_corporate_name[ !is.na( 
-fix_names$fix) ], x$legal_corporate_name) ] <- na.omit( fix_names$fix)
+fix_names$fix) ], x$legal_corporate_name) ] <- fix_names$fix[ !is.na(
+fix_names$fix) ]
 
 # Final Results Calculation
 instance_list[[1]] <- x
@@ -144,10 +160,12 @@ rownames(dats3) <- NULL
 dats3$key <- c( instance_list[[1]]$legal_corporate_name, 
 instance_list[[2]]$EIN, instance_list[[3]]$EIN)
 
-# Use the selected NAICS codes instead of the 6-digit ones.
+# Use the selected NAICS codes for visualization, instead of the 6-digit ones.
 dats3$NAICS <- with(DATS2, naics$naics_orig_from_list[ match( dats3$NAICS, 
 naics$naics_recode)] )
 # Only unique keys are considered firms, obviously. 
-dats3 <- tapply( dats3$key[ !duplicated(dats3$key) ], dats3$NAICS[ !duplicated(
-dats3$key) ], FUN = length)
+dats3 <- tapply( dats3$key[ !duplicated(dats3$key) ], dats3$NAICS[ 
+!duplicated(dats3$key) ], FUN = length)
 
+# Write the final results.
+write.csv( dats3, "./Stage3/results_indicator023_stage3.csv")

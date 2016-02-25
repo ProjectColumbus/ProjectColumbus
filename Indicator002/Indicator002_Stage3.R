@@ -75,4 +75,5 @@ dats3 <- do.call(rbind, result_list)
 dats3 <- aggregate( dats3[, -grep("NAICS", colnames(dats3))], by = list(
 NAICS = dats3$NAICS), FUN = sum, na.rm = T)
 
+# Write the final results.
 write.csv(dats3, "./Stage3/results_indicator002_stage3.csv", row.names = F)

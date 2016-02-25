@@ -1,26 +1,23 @@
- 
-dats1 <- read.csv("../Indicator009/Stage3/results_indicator009_stage3.csv", 
-stringsAsFactors = FALSE)
+# Script for DDEC Indicator 013
+# Author: Gamaliel Lamboy Rodríguez
+# Version: 1.0
+# Description:
+# This script partially automatizes the obtainment of Indicator 013 from its 
+# database. It assumes an incremental updating of the data, and that the most 
+# recent year of database is being manipulated. This indicator re-expresses the
+# information from Indicator 009 and calculates the shares of ICT employment in
+# the Intangible Assets Economy.
 
-dats1 <- dats1[,c("naics_code", "naics_title", "occupational_code",
-"occupational_title", "total_employees")]
+# Data used is feeded and subsetted directly from the Indicator 009 results.
+load( "../Indicator009/Stage3/database_indicator009_stage3.RData")
 
-total_nfarm <- read.csv("../Indicator009/Stage1/database_indicator009_stage1.csv",
-stringsAsFactors = FALSE, header = TRUE)
+# Simplify the results.
+dats1 <- dats3
+dats3 <- dats1[, c("naics_code", "naics_title")]
 
-total_nfarm <- total_nfarm[ total_nfarm$area_code == 72 & 
-total_nfarm$occupational_code == "00-0000", c("naics_code", "naics_title", 
-"occupational_code", "occupational_title", "total_employees")]
+# Create the indicator.
+dats3$ICT_share <- sprintf("%1.1f%%", dats1$ICT_employees / 
+dats1$total_employees * 100)
 
-total_nfarm$naics_code <- gsub("0+$","", total_nfarm$naics_code)
-
-total_nfarm <- total_nfarm[ total_nfarm$naics_code %in% dats1$naics_code,]
-
-emp_tots <- rep(total_nfarm$total_employees, table( dats1$naics_code))
-
-dats3 <- dats1
-
-dats3$total_employees <- ifelse( dats3$total_employees == 0 | 
-is.na(dats3$total_employees), 0, dats3$total_employees / as.numeric(emp_tots))
-
-write.csv(dats3, "./Stage3/results_indicator003_stage3.csv")
+# Write the final results.
+write.csv(dats3, "./Stage3/results_indicator009_stage3.csv", row.names = F)

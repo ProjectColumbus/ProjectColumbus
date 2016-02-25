@@ -1,25 +1,14 @@
-"naics_code","naics_title","occupational_code","occupational_title","total_employees","annual_mean_wage"
-"517","Telecommunications","11-3021","Computer and Information Systems Managers","60","86460"
-"517","Telecommunications","15-1121","Computer Systems Analysts",NA,"51670"
-"517","Telecommunications","15-1131","Computer Programmers","50",NA
-"517","Telecommunications","15-1141","Database Administrators","40","55690"
-"517","Telecommunications","15-1142","Network and Computer Systems Administrators","80","52210"
-"517","Telecommunications","15-1151","Computer User Support Specialists","220","27470"
-"517","Telecommunications","15-1152","Computer Network Support Specialists","100","33730"
-"517","Telecommunications","43-9021","Data Entry Keyers","40",NA
-"518","Data Processing, Hosting, and Related Services","43-9021","Data Entry Keyers","180","21650"
-"5415","Computer Systems Design and Related Services","11-3021","Computer and Information Systems Managers","40","94260"
-"5415","Computer Systems Design and Related Services","15-1121","Computer Systems Analysts","160","39710"
-"5415","Computer Systems Design and Related Services","15-1131","Computer Programmers","360","43700"
-"5415","Computer Systems Design and Related Services","15-1132","Software Developers, Applications","100","50510"
-"5415","Computer Systems Design and Related Services","15-1133","Software Developers, Systems Software","30","81570"
-"5415","Computer Systems Design and Related Services","15-1143","Computer Network Architects",NA,"50520"
-"5415","Computer Systems Design and Related Services","15-1151","Computer User Support Specialists","230","29770"
-"5415","Computer Systems Design and Related Services","15-1152","Computer Network Support Specialists","60","39410"
-"5415","Computer Systems Design and Related Services","17-2061","Computer Hardware Engineers",NA,"61980"
-"5416","Management, Scientific, and Technical Consulting Services","15-1122","Information Security Analysts","50","51080"
-"5416","Management, Scientific, and Technical Consulting Services","15-1132","Software Developers, Applications","40","47150"
-"5416","Management, Scientific, and Technical Consulting Services","15-1143","Computer Network Architects",NA,"35080"
-"5416","Management, Scientific, and Technical Consulting Services","15-1151","Computer User Support Specialists","190","36020"
-"6221","General Medical and Surgical Hospitals","15-1151","Computer User Support Specialists","60","23370"
-"6221","General Medical and Surgical Hospitals","43-9021","Data Entry Keyers","90","18790"
+"naics_code","naics_title","total_employees","average_wage_all_employees","ICT_employees"
+"511","Publishing Industries (except Internet)",2810,"40150",120
+"5111","Newspaper, Periodical, Book, and Directory Publishers",2600,"37630",0
+"517","Telecommunications",9580,"36200",590
+"518","Data Processing, Hosting, and Related Services",1940,NA,180
+"5191","Other Information Services",170,NA,0
+"5413","Architectural, Engineering, and Related Services",4800,"44030",0
+"5414","Specialized Design Services",230,"26270",0
+"5415","Computer Systems Design and Related Services",3530,"46980",980
+"5416","Management, Scientific, and Technical Consulting Services",6030,"35830",280
+"54171","Research and Development in the Physical, Engineering, and Life Sciences",720,"43150",0
+"6114","Business Schools and Computer and Management Training",900,"30470",0
+"6215","Medical and Diagnostic Laboratories",5780,"25730",0
+"6221","General Medical and Surgical Hospitals",31320,"26620",150

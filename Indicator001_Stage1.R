@@ -148,7 +148,7 @@ dats3$gross_prod_share <- prop.table(dats3$gross_prod_nominal)
 if( !is.null(PARAMS$year) ) colnames(dats3)[3] <- as.character( PARAMS$year)
 
 #+ Stage 3 Complete -- Write dats3 as final output
-write.csv( dats3, "./Stage3/database_indicator001_stage3.csv", row.names = F)
+write.csv( dats3, "./Stage3/results_indicator001_stage3.csv", row.names = F)
 
 #+ Back Up All Procedures in an R Workspace File
 save.image("Indicator001.RData")

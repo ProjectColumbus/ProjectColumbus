@@ -11,7 +11,7 @@
 # Preload additional packages to use.
 library("openxlsx")
 
-# Parameters to Use.
+# Parameters used to read the data.
 PARAMS <- list(
 startRow = 10,
 sheet = 1,
@@ -35,7 +35,7 @@ detach(PARAMS)
 id <- c("18t24","25mt", "25t34", "35t44", "45t64", "65mt", "poverty_rate",
 "median_wage")
 
-# Construct the final labels for the row variables.
+# Construct the final labels for the row variable groups.
 labels <- paste("Educational Attainment -- ", gsub("([0-9]{2})t([0-9]{2})",
 "\\1 to \\2 years old", id[1:6]), sep = "")
 labels <- gsub("([0-9]{2})mt", "\\1 years old or more", labels)
