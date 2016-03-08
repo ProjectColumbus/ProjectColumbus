@@ -20,4 +20,4 @@ dats3$ICT_share <- sprintf("%1.1f%%", dats1$ICT_employees /
 dats1$total_employees * 100)
 
 # Write the final results.
-write.csv(dats3, "./Stage3/results_indicator009_stage3.csv", row.names = F)
+write.csv(dats3, "./Stage3/results_indicator013_stage3.csv", row.names = F)

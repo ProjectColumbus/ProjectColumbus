@@ -22,7 +22,7 @@ library("openxlsx")
 
 # Initial parameters for reading the file.
 PARAMS <- list(
-startrow=1,
+startRow=1,
 sheet=1,
 rowNames = FALSE,
 colNames = FALSE,
@@ -32,7 +32,7 @@ cols = c(1:12,14)
 attach(PARAMS)
 
 # Read the original data.
-dats1 <- do.call( read.xlsx, c( list( PARAMS, xlsxFile = 
+dats1 <- do.call( read.xlsx, c( PARAMS, list(xlsxFile = 
 "./Original_Data/Indicator 011 Database.xlsx")))
 
 detach(PARAMS)

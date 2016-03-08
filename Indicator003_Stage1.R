@@ -49,4 +49,4 @@ codelist_occ,c("occupational_code", "occupational_code_title",
 dats3$total_employment <- as.numeric(dats3$total_employment)
 
 # Write the final results.
-write.csv( dats3, "./Stage3/results_indicator001_stage3.csv", row.names = F)
+write.csv( dats3, "./Stage3/results_indicator003_stage3.csv", row.names = F)
