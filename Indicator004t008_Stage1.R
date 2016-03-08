@@ -1,4 +1,4 @@
-# Script for DDEC Indicators 004 to 007
+# Script for DDEC Indicators 004 to 008
 # Author: Gamaliel Lamboy Rodríguez
 # Version: 1.0
 # Description:
