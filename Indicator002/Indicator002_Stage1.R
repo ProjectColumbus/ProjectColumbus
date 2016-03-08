@@ -8,15 +8,6 @@
 # master script. However, the resulting files are created so that they can
 # afterwards be merged in a cumulative (time-series) dataset.
 
-# The following script produces the Stage 1 output for the series. It ends with
-# a call to the Stage 2 Script. However, this call is not yet functional until
-# the DATADIR and SCRIPTDIR variables have been set in the master script. For
-# now, they have to be hard-coded into the Stage 1 dataset.
-DATADIR <- "~/Documents/Cuentas Satélite/Scripts File/DATA"
-SCRIPTDIR <- "~/Documents/Cuentas Satélite/Scripts File/prep_scripts"
-# DATADIR -- directory from Master Script
-setwd( paste(DATADIR, "/Indicator002", sep = ""))
-
 #+ List of database parameters to be considered when importing the Excel
 #+ Workbook:
 #+
@@ -34,19 +25,20 @@ setwd( paste(DATADIR, "/Indicator002", sep = ""))
 #+ detectdates -- should R attempt to detect dates automatically? Dates were
 #+ not used for this file, hence this functionality is set to FALSE.
 #+ year -- optional numeric value for the year of the dataset used.
+#+ quarter -- the quarter for the 
 PARAMS <- list(
-startrow = 3, 
-sheet = 1, 
-colnames = TRUE,
-rownames = FALSE,
-cols = 1:4,
-detectdates = FALSE,
 year = 2015,
-quarter = 1
+quarter = 1,
+startRow = 3, 
+sheet = 1, 
+colNames = TRUE,
+rowNames = FALSE,
+cols = 1:4,
+detectDates = FALSE
 )
 
 # Required packages for the R-code: openxlsx and tcltk. openxlsx serves to
-# open .xlsx files, and tcltk gives access to basic graphical capabilities in R.
+# open .xlsx files, and tcltk gives access to basic GUI capabilities in R.
 library("openxlsx")
 library("tcltk")
 
@@ -54,9 +46,8 @@ library("tcltk")
 attach(PARAMS)
 
 # Read the variable listing in  Original_Data/Variable List.xlsx, using PARAMS
-var_list <- read.xlsx( "./Original_Data/Variable List.xlsx", sheet = sheet, 
-startRow = startrow, colNames = colnames, rowNames = rownames, detectDates = 
-detectdates, cols = cols )
+var_list <- do.call( read.xlsx, c( PARAMS[-c(1,2)], list( xlsxFile =
+ "./Original_Data/Variable List.xlsx")) )
 
 # PARAMS no longer needed
 detach(PARAMS)
@@ -86,9 +77,8 @@ dats1 <- as.data.frame(dats1, stringsAsFactors = FALSE)
 colnames(dats1) <- var_list$varname
 
 # Convert every column of employment to numeric.
-dats1[, grep("^emp_m[1-3]$|^tot_wages$", colnames(dats1)) ] <- sapply( grep(
-"^emp_m[1-3]$|^tot_wages$", colnames(dats1) ), function(x)
-as.numeric(dats1[,x]) )
+vnum <- grep("^emp_m[1-3]$|^tot_wages$", colnames(dats1))
+dats1[, v] <- sapply( v, function(x) as.numeric(dats1[,x]) )
 
 # Output the file as a csv, for raw-data backup and (perhaps) manual validation
 # purposes.
@@ -98,11 +88,10 @@ DATS1 <- new.env()
 with(DATS1,
 {
     dats1 = dats1;
-    DATADIR = DATADIR;
-    SCRIPTDIR = SCRIPTDIR;
     var_list = var_list
 })
 
-rm(dats1, DATADIR, SCRIPTDIR, var_list); attach(DATS1);
+rm(dats1, var_list); attach(DATS1);
 # Proceed with Stage 2.
-# source( paste(SCRIPTDIR, "/Indicator002/Indicator002_Stage2.R", sep = ""))
+source( paste(DATADIR_ROOT, "/prep_scripts/Indicator002/Indicator002_Stage2.R",
+sep = ""))

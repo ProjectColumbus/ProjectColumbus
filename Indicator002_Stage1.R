@@ -1,0 +1,1 @@
+/home/gamaliel/Documents/Cuentas Satélite/Scripts File/prep_scripts/Indicator002/Indicator002_Stage1.R

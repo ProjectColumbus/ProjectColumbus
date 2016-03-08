@@ -144,7 +144,7 @@ if(any(nochange == TRUE))
     " Using originals.", sep = ""), type = "ok", icon = "info")
 }
 
-Apply the changed names (if any) to legal_corporate_name.
+# Apply the changed names (if any) to legal_corporate_name.
 x$legal_corporate_name[ match( fix_names$legal_corporate_name[ !is.na( 
 fix_names$fix) ], x$legal_corporate_name) ] <- fix_names$fix[ !is.na(
 fix_names$fix) ]

@@ -31,13 +31,13 @@ setwd( paste( DATADIR, "/Indicator001", sep = ""))
 #+ not used for this file, hence this functionality is set to FALSE.
 #+ year -- optional numeric value for the year of the dataset used.
 PARAMS <- list( 
-startrow = 6, 
+startRow = 6, 
 sheet = 1,
-colnames = FALSE,
-rownames = FALSE,
+colNames = FALSE,
+rowNames = FALSE,
 rows = 1:405,
 cols = 1:19,
-detectdates = FALSE,
+detectDates = FALSE,
 year = NULL
 )
 
@@ -54,10 +54,8 @@ attach(PARAMS)
 
 #+ Using the read.xlsx() function, the original Excel Workbook was transformed 
 #+ into a data.frame object in R, using the parameters given in PARAMS.
-dats1 <- read.xlsx( "./Original_Data/Indicator 001 Database.xlsx", sheet = 
-sheet, startRow = startrow, colNames = colnames, rowNames = rownames, 
-detectDates = detectdates, rows = rows, cols = cols)
-
+dats1 <- do.call( read.xlsx, c( list( xlsxFile = 
+"./Original_Data/Indicator 001 Database.xlsx", PARAMS)))
 #+ Detach PARAMS from the R search path for the rest of the procedure.
 detach(PARAMS)
 
