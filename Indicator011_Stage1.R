@@ -19,6 +19,7 @@
 
 # Preload additional packages to use.
 library("openxlsx")
+library("reshape2")
 
 # Initial parameters for reading the file.
 PARAMS <- list(
@@ -79,6 +80,8 @@ naics <- sapply(codelist_naics, function(x)
 # Select the codes and results to be presented. Perhaps the colnames should
 # be referenced instead of the column numbers here?
 dats3 <- dats1[ naics0 %in% naics, c(1:2, 9:12)]
+
+dats3 <- melt( dats3, id = colnames(dats3)[1:2])
 
 # Write the data.
 write.csv( dats3, "./Stage3/results_indicator011_stage3.csv", row.names = F)
