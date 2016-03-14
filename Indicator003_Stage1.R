@@ -16,14 +16,14 @@ PARAMS <- list(
 startRow = 1,
 sheet = 1,
 colNames = TRUE,
-rowNames = FALSE,
+rowNames = FALSE
 )
 
 attach(PARAMS)
 
 # Read the original data.
 dats1 <- do.call(read.xlsx, c( PARAMS, list( xlsxFile = 
-"./Original_Data/Indicator 003 Database.xlsx")) )
+tcltk::tk_choose.files(multi = FALSE))) )
 
 detach(PARAMS)
 

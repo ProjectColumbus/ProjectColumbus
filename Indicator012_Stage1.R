@@ -12,9 +12,10 @@ library("openxlsx")
 
 # Parameters used to read the original data.
 PARAMS <- list(
-sheet = 1:4,
+sheet = 1:5,
 startRow = 1,
-cols = 1:4
+cols = 1:4,
+xlsxFile = tcltk::tk_choose.files(multi = FALSE)
 )
 
 attach(PARAMS)
@@ -22,8 +23,7 @@ attach(PARAMS)
 # Read the original data.
 dats1 <- lapply( sheet, function(x) 
 {
-    tmp <- do.call(read.xlsx, c( list( xlsxFile = 
-    "./Original_Data/Indicator 012 Database.xlsx", PARAMS[-1])))
+    tmp <- do.call(read.xlsx, c(PARAMS[-1], list(sheet = x)))
     tmp$Variable <- gsub("^ +| +$", "", tmp$Variable)
     tmp
 })
@@ -48,7 +48,7 @@ head(dats1)
 var_split <- paste("(Grand total) \\- (First major)\\, (.+)\\, ",
 "((Bachelor|Master|Doctor)(.*)) \\- (\\([0-9]{2}\\))", sep = "")
 
-# Components 2,3,5, and 7 are extracted to make the columns (see above 
+# Components 2,3,5, and 7 are extracted to make the columns (see above
 # comment).
 var <- lapply( c(2:3,5,7), function(y)
 {
@@ -63,25 +63,25 @@ colnames(dats1) <- scan(what = "", sep = "\n", file = "./Stage1/Changed_Names")
 
 dats2 <- dats1
 
-# A naive assumption was made to convert two-digit years into 4-digits: any 
+# A naive assumption was made to convert two-digit years into 4-digits: any
 # year number below 30 must refer to years from 2000 onwards, and is from the
 # 19**'s otherwise. Can be refined later.
-dats2$year <- ifelse( as.numeric(gsub("\\(|\\)", "", dats2$year)) < 30, 
-gsub("\\(([0-9]{2})\\)", "20\\1", dats2$year), gsub("\\(([0-9]{2})\\)", 
+dats2$year <- ifelse( as.numeric(gsub("\\(|\\)", "", dats2$year)) < 30,
+gsub("\\(([0-9]{2})\\)", "20\\1", dats2$year), gsub("\\(([0-9]{2})\\)",
 "19\\1", dats2$year))
 
 dats3 <- dats2
 
-# The doctor's degrees were originally divided in various types: research, 
-# professional practice and other. We do not require this level of 
+# The doctor's degrees were originally divided in various types: research,
+# professional practice and other. We do not require this level of
 # segmentation, and thus must aggregate all these levels according to the
 # index components.
 dats3 <- split(dats3, dats3$level)
 
 # A "cheat" is made to the aggregate() function, in order to disallow it from
-# removing the index columns. We use all the index columns, even though only 
-# the cip_description is the only column that counts. 
-dats3$Doctor <- aggregate(dats3$Doctor[,-c(1:4)], by = 
+# removing the index columns. We use all the index columns, even though only
+# the cip_description is the only column that counts.
+dats3$Doctor <- aggregate(dats3$Doctor[,-c(1:4)], by =
 dats3$Doctor[,1:4], FUN = sum, na.rm = T, sort = F)
 
 # Create the final dataset.
@@ -92,5 +92,5 @@ rownames(dats3) <- NULL
 save(dats3, file = "./Stage3/database_indicator012_stage3.RData")
 
 # Write the final results.
-write.csv( dats3[,-c(5,7)], "./Stage3/results_indicator012_stage3.csv", 
+write.csv( dats3[,-c(5,7)], "./Stage3/results_indicator012_stage3.csv",
 row.names = F)

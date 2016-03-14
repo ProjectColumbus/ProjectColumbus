@@ -25,7 +25,7 @@ attach(PARAMS)
 
 # Read the original data.
 dats1 <- do.call(read.xlsx, c( PARAMS, list(
-xlsxFile = "./Original_Data/Indicator 015 Database.xlsx")))
+xlsxFile = tcltk::tk_choose.files( multi = FALSE) )))
 
 detach(PARAMS)
 
@@ -38,15 +38,15 @@ rownames(dats1) <- scan(what = "", sep = "\n", file = "./Stage1/Changed_Names")
 # on a multi-level outline and did not include all the relevant information
 # for a particular data point ( they are understandable only through context
 # and indentation).
-dats2 <- dats1[ c(c("total_households", "computer_desktoplaptop", 
-"computer_handheld", "other_computer", "households_without_computer"),1]
-names(dats2)  <- rownames(dats1)[c(1,3,5,7,9)]
+dats2 <- dats1[ c("total_households", "computer_desktoplaptop",
+"computer_handheld", "computer_other", "households_without_computer"),1]
 
-dats3 <- dats2
+dats3 <- as.numeric( gsub("\\,", "", dats2))
 
 # Calculate additional indicators.
-dats3 <- c( dats3, pct_with_computer = unname(dats3[2] / dats3[1] * 100),
-pct_without_computer = unname(100 - dats3["pct_with_computer"]))
+dats3 <- c( dats3, pct_with_desktoplaptop = dats3[2] / dats3[1] * 100,
+pct_without_computer = dats3[5] / dats3[1] * 100)
+names(dats3)[1:5]  <- rownames(dats1)[c(1,3,5,7,9)]
 
 # Write the final results.
 write.csv(dats3, "./Stage3/results_indicator015_stage3.csv")

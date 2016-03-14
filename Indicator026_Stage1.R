@@ -7,8 +7,11 @@
 # recent year of database is being manipulated. This indicator measures the
 # number of institutions with completions awarded in the CIP codes of the EAI.
 
+filters = matrix( c("R Data Files", ".RData"), 1, 2, byrow = TRUE)
+
 # The data is obtained directly from the results in Indicator 012.
-load("../Indicator012/Stage3/database_indicator012_stage3.RData")
+load(tcltk::tk_choose.files(multi = FALSE, filters = filters))
 
 # Select the appropriate columns, and write file.
-write.csv(dats3[,-c(6,7)], "./Stage3/results_indicator026_stage3.csv")
+write.csv(dats3[,-c(6,7)], "./Stage3/results_indicator026_stage3.csv",
+row.names = FALSE)

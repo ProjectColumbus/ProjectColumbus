@@ -7,9 +7,10 @@
 # recent year of database is being manipulated. This indicator re-expresses the
 # information from Indicator 009 and calculates the shares of ICT employment in
 # the Intangible Assets Economy.
+filters = matrix( c("R Data Files", ".RData"), byrow = TRUE, nrow = 1, ncol = 2)
 
 # Data used is feeded and subsetted directly from the Indicator 009 results.
-load( "../Indicator009/Stage3/database_indicator009_stage3.RData")
+load( tcltk::tk_choose.files(multi = FALSE, filters = filters))
 
 # Simplify the results.
 dats1 <- dats3

@@ -87,8 +87,8 @@ colnames(dats3) <- c("Main Sector", "Amount (in $ millions)")
 dats3[ nrow(dats3) + 1,] <- c("Total GERD (Manufacturing & Services", sum( 
 as.numeric( dats3[ c(1,3),2 ] )) )
 
-dats3[1,1] <- "Private (Services)"; dats3[1,2] <- as.numeric(dats3[1,2]) * 
-as.numeric( dats3[2,2])
+dats3[1,1] <- "Private (Services)"; dats3[1,2] <- as.numeric(dats3[1,2]) *
+(1 -as.numeric( dats3[2,2]))
 
 dats3 <- dats3[-2,]
 

@@ -1,0 +1,97 @@
+"occupational_code","occupational_code_title","year","variable","value"
+"11-3021","Computer and Information Systems Managers","2012","total_employment",1000
+"15-1121","Computer Systems Analysts","2012","total_employment",1030
+"15-1122","Information Security Analysts","2012","total_employment",160
+"15-1131","Computer Programmers","2012","total_employment",1290
+"15-1132","Software Developers, Applications","2012","total_employment",390
+"15-1133","Software Developers, Systems Software","2012","total_employment",550
+"15-1134","Web Developers","2012","total_employment",110
+"15-1141","Database Administrators","2012","total_employment",350
+"15-1142","Network and Computer Systems Administrators","2012","total_employment",910
+"15-1143","Computer Network Architects","2012","total_employment",390
+"15-1151","Computer User Support Specialists","2012","total_employment",2920
+"15-1152","Computer Network Support Specialists","2012","total_employment",530
+"15-2041","Statisticians","2012","total_employment",230
+"17-2061","Computer Hardware Engineers","2012","total_employment",170
+"43-9011","Computer Operators","2012","total_employment",860
+"43-9021","Data Entry Keyers","2012","total_employment",2780
+"11-3021","Computer and Information Systems Managers","2012","annual_mean_wage",75030
+"15-1121","Computer Systems Analysts","2012","annual_mean_wage",50780
+"15-1122","Information Security Analysts","2012","annual_mean_wage",45760
+"15-1131","Computer Programmers","2012","annual_mean_wage",44250
+"15-1132","Software Developers, Applications","2012","annual_mean_wage",46170
+"15-1133","Software Developers, Systems Software","2012","annual_mean_wage",68560
+"15-1134","Web Developers","2012","annual_mean_wage",38420
+"15-1141","Database Administrators","2012","annual_mean_wage",47470
+"15-1142","Network and Computer Systems Administrators","2012","annual_mean_wage",46720
+"15-1143","Computer Network Architects","2012","annual_mean_wage",49460
+"15-1151","Computer User Support Specialists","2012","annual_mean_wage",28130
+"15-1152","Computer Network Support Specialists","2012","annual_mean_wage",36970
+"15-2041","Statisticians","2012","annual_mean_wage",31080
+"17-2061","Computer Hardware Engineers","2012","annual_mean_wage",76920
+"43-9011","Computer Operators","2012","annual_mean_wage",22970
+"43-9021","Data Entry Keyers","2012","annual_mean_wage",20160
+"11-3021","Computer and Information Systems Managers","2013","total_employment",1030
+"15-1121","Computer Systems Analysts","2013","total_employment",1010
+"15-1122","Information Security Analysts","2013","total_employment",190
+"15-1131","Computer Programmers","2013","total_employment",1340
+"15-1132","Software Developers, Applications","2013","total_employment",320
+"15-1133","Software Developers, Systems Software","2013","total_employment",470
+"15-1134","Web Developers","2013","total_employment",90
+"15-1141","Database Administrators","2013","total_employment",400
+"15-1142","Network and Computer Systems Administrators","2013","total_employment",680
+"15-1143","Computer Network Architects","2013","total_employment",390
+"15-1151","Computer User Support Specialists","2013","total_employment",2850
+"15-1152","Computer Network Support Specialists","2013","total_employment",540
+"15-2041","Statisticians","2013","total_employment",250
+"17-2061","Computer Hardware Engineers","2013","total_employment",280
+"43-9011","Computer Operators","2013","total_employment",780
+"43-9021","Data Entry Keyers","2013","total_employment",2900
+"11-3021","Computer and Information Systems Managers","2013","annual_mean_wage",74680
+"15-1121","Computer Systems Analysts","2013","annual_mean_wage",51110
+"15-1122","Information Security Analysts","2013","annual_mean_wage",47060
+"15-1131","Computer Programmers","2013","annual_mean_wage",44930
+"15-1132","Software Developers, Applications","2013","annual_mean_wage",49620
+"15-1133","Software Developers, Systems Software","2013","annual_mean_wage",66080
+"15-1134","Web Developers","2013","annual_mean_wage",39860
+"15-1141","Database Administrators","2013","annual_mean_wage",48510
+"15-1142","Network and Computer Systems Administrators","2013","annual_mean_wage",46860
+"15-1143","Computer Network Architects","2013","annual_mean_wage",49840
+"15-1151","Computer User Support Specialists","2013","annual_mean_wage",30000
+"15-1152","Computer Network Support Specialists","2013","annual_mean_wage",39490
+"15-2041","Statisticians","2013","annual_mean_wage",33150
+"17-2061","Computer Hardware Engineers","2013","annual_mean_wage",75060
+"43-9011","Computer Operators","2013","annual_mean_wage",23530
+"43-9021","Data Entry Keyers","2013","annual_mean_wage",20940
+"11-3021","Computer and Information Systems Managers","2014","total_employment",980
+"15-1121","Computer Systems Analysts","2014","total_employment",1070
+"15-1122","Information Security Analysts","2014","total_employment",230
+"15-1131","Computer Programmers","2014","total_employment",1260
+"15-1132","Software Developers, Applications","2014","total_employment",470
+"15-1133","Software Developers, Systems Software","2014","total_employment",210
+"15-1134","Web Developers","2014","total_employment",110
+"15-1141","Database Administrators","2014","total_employment",450
+"15-1142","Network and Computer Systems Administrators","2014","total_employment",650
+"15-1143","Computer Network Architects","2014","total_employment",390
+"15-1151","Computer User Support Specialists","2014","total_employment",2900
+"15-1152","Computer Network Support Specialists","2014","total_employment",590
+"15-2041","Statisticians","2014","total_employment",240
+"17-2061","Computer Hardware Engineers","2014","total_employment",450
+"43-9011","Computer Operators","2014","total_employment",700
+"43-9021","Data Entry Keyers","2014","total_employment",2750
+"11-3021","Computer and Information Systems Managers","2014","annual_mean_wage",76570
+"15-1121","Computer Systems Analysts","2014","annual_mean_wage",49760
+"15-1122","Information Security Analysts","2014","annual_mean_wage",46890
+"15-1131","Computer Programmers","2014","annual_mean_wage",45100
+"15-1132","Software Developers, Applications","2014","annual_mean_wage",51930
+"15-1133","Software Developers, Systems Software","2014","annual_mean_wage",62660
+"15-1134","Web Developers","2014","annual_mean_wage",37320
+"15-1141","Database Administrators","2014","annual_mean_wage",47570
+"15-1142","Network and Computer Systems Administrators","2014","annual_mean_wage",46400
+"15-1143","Computer Network Architects","2014","annual_mean_wage",53980
+"15-1151","Computer User Support Specialists","2014","annual_mean_wage",31270
+"15-1152","Computer Network Support Specialists","2014","annual_mean_wage",38470
+"15-2041","Statisticians","2014","annual_mean_wage",35000
+"17-2061","Computer Hardware Engineers","2014","annual_mean_wage",68060
+"43-9011","Computer Operators","2014","annual_mean_wage",23000
+"43-9021","Data Entry Keyers","2014","annual_mean_wage",21450

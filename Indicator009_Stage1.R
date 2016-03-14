@@ -16,7 +16,8 @@ PARAMS <- list(
 sheet = 1:3,
 startRow = 1,
 colNames = TRUE,
-rowNames = FALSE
+rowNames = FALSE,
+xlsxFile = tcltk::tk_choose.files( multi = FALSE)
 )
 
 attach(PARAMS)
@@ -24,8 +25,10 @@ attach(PARAMS)
 # Read the list of sheets using the "sheet" parameter. All files are simply
 # a splice of a larger file, and thus share the same structure.
 dats1 <- lapply(PARAMS$sheet, function(x) do.call( read.xlsx, c( list( 
-xlsxFile = "./Original_Data/Indicator 009 Database.xlsx", sheet = x), 
-PARAMS[-1] )) )
+sheet = x), PARAMS[-1] )) )
+
+cnames <- Reduce(function(x, y) intersect(x,y), lapply(dats1, colnames))
+dats1 <- lapply(dats1, function(x) x[,cnames])
 
 detach(PARAMS)
 

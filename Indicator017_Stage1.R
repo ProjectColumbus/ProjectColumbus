@@ -18,14 +18,14 @@ startRow = 1,
 cols = 1:9,
 detectDates = FALSE,
 rowNames = FALSE,
-colNames = TRUE
+colNames = TRUE,
+xlsxFile = tcltk::tk_choose.files(multi = FALSE)
 )
 
 attach(PARAMS)
 
 # Read the original data.
-dats1 <- do.call(read.xlsx, c( PARAMS, list(
-xlsxFile = "./Original_Data/Indicator 017 Database.xlsx")))
+dats1 <- do.call(read.xlsx, PARAMS)
 
 detach(PARAMS)
 
@@ -33,16 +33,16 @@ dats3 <- dats1
 
 # Create column with grand total, which includes both patents and statutory
 # intervention registrations (SIRs).
-dats3[,max(PARAMS$cols) + 1] <- rowSums( sapply(dats1[,c(4:9)], as.numeric), 
-na.rm = T)
+dats3[,max(PARAMS$cols) + 1] <- rowSums( sapply(dats1[,c(7:8)], as.numeric),
+na.rm = TRUE)
 
 # Names were only changed in the dataset with created columns.
 colnames(dats3) <- scan(what = "", sep = "\n", file = "./Stage1/Changed_Names")
 
 # Select and subset the data.
-dats3 <- unlist(dats1[ dats1$code == "PR",grep("patents|total|sirs", 
-colnames(dats1))])
+dats3 <- unlist(dats3[ dats3$code == "PR",grep("patents|total|sirs",
+colnames(dats3)), drop = TRUE])
 
 # Write the final results.
-write.csv( dats3, "./Stage3/results_indicator017_stage3.csv", row.names = F)
+write.csv( dats3, "./Stage3/results_indicator017_stage3.csv")
 

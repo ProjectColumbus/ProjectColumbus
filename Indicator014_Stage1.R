@@ -24,8 +24,8 @@ colNames = TRUE
 attach(PARAMS)
 
 # Read the original data.
-dats1 <- do.call(read.xlsx, c( PARAMS, list(
-xlsxFile = "./Original_Data/Indicator 014 Database.xlsx")))
+dats1 <- do.call(read.xlsx, c( PARAMS, list( xlsxFile = tcltk::tk_choose.files(
+multi = FALSE) )))
 
 detach(PARAMS)
 
@@ -39,10 +39,10 @@ names(dats2) <- rownames(dats1)
 
 # Select the variables to be used.
 dats3 <- dats2[ c("total_households", "households_with_internet", 
-"connect_dialup", "noconnect", "households_without_internet")]
+"connect_dialup", "nosubscription", "households_without_internet")]
 
 # Calculate the indicators and join them with other relevant data.
-hholds_pct_hispeed <- unname((dats2[ 2] - dats2[3]) / dats2[1] * 100)
+hholds_pct_hispeed <- unname((dats2[ 2] - dats2[3]) / dats2[2] * 100)
 
 dats3 <- c(dats3, hholds_pct_hispeed = hholds_pct_hispeed, 
 hholds_pct_nohispeed = 100 - hholds_pct_hispeed)

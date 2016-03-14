@@ -18,14 +18,14 @@ sheet = 1,
 colNames = FALSE,
 rowNames = FALSE,
 rows = c(1:14,16:23,28:30,32:34,36:38,40:42,45:48,51:56),
-cols = c(1,4)
+cols = c(1,4),
+xlsxFile = tcltk::tk_choose.files(multi = FALSE)
 )
 
 attach(PARAMS)
 
 # Read the original data.
-dats1 <- do.call( read.xlsx, c( list( xlsxFile = 
-"./Original_Data/Indicator 010 Database.xlsx"), PARAMS))
+dats1 <- do.call( read.xlsx, PARAMS)
 
 detach(PARAMS)
 

@@ -1,55 +1,211 @@
 "level","first_second_major","cip_description","year","sum"
-"Bachelor","First major","Communications Technology/Technician","2013",42
-"Bachelor","First major","Communications Technologies/Technicians and Support Services, Other","2013",NA
-"Bachelor","First major","Computer and Information Sciences and Support Services","2013",605
-"Bachelor","First major","Engineering","2013",1095
-"Bachelor","First major","Engineering Technologies and Engineering-related Fields","2013",226
-"Bachelor","First major","Biological and Biomedical Sciences","2013",1429
-"Bachelor","First major","Mathematics and Statistics","2013",24
-"Bachelor","First major","Biological and Physical Sciences","2013",NA
-"Bachelor","First major","Mathematics and Computer Science","2013",NA
-"Bachelor","First major","Science, Technology and Society","2013",NA
-"Bachelor","First major","Natural Sciences","2013",206
-"Bachelor","First major","Computational Science","2013",NA
-"Bachelor","First major","Human Computer Interaction","2013",NA
-"Bachelor","First major","Electrical/Electronics Maintenance and Repair Technology","2013",0
-"Bachelor","First major","Precision Systems Maintenance and Repair Technologies","2013",NA
-"Bachelor","First major","Medical Illustration and Informatics","2013",NA
-"Bachelor","First major","Physical Sciences","2013",230
-"Bachelor","First major","Science Technologies/Technicians","2013",5
-"Doctor","First major","Biological and Biomedical Sciences","2013",27
-"Doctor","First major","Biological and Physical Sciences","2013",0
-"Doctor","First major","Communications Technologies/Technicians and Support Services, Other","2013",0
-"Doctor","First major","Communications Technology/Technician","2013",0
-"Doctor","First major","Computational Science","2013",0
-"Doctor","First major","Computer and Information Sciences and Support Services","2013",4
-"Doctor","First major","Electrical/Electronics Maintenance and Repair Technology","2013",0
-"Doctor","First major","Engineering","2013",6
-"Doctor","First major","Engineering Technologies and Engineering-related Fields","2013",0
-"Doctor","First major","Human Computer Interaction","2013",0
-"Doctor","First major","Mathematics and Computer Science","2013",0
-"Doctor","First major","Mathematics and Statistics","2013",1
-"Doctor","First major","Medical Illustration and Informatics","2013",0
-"Doctor","First major","Natural Sciences","2013",0
-"Doctor","First major","Physical Sciences","2013",30
-"Doctor","First major","Precision Systems Maintenance and Repair Technologies","2013",0
-"Doctor","First major","Science Technologies/Technicians","2013",0
-"Doctor","First major","Science, Technology and Society","2013",0
-"Master","First major","Communications Technology/Technician","2013",NA
-"Master","First major","Communications Technologies/Technicians and Support Services, Other","2013",NA
-"Master","First major","Computer and Information Sciences and Support Services","2013",95
-"Master","First major","Engineering","2013",176
-"Master","First major","Engineering Technologies and Engineering-related Fields","2013",90
-"Master","First major","Biological and Biomedical Sciences","2013",87
-"Master","First major","Mathematics and Statistics","2013",28
-"Master","First major","Biological and Physical Sciences","2013",NA
-"Master","First major","Mathematics and Computer Science","2013",NA
-"Master","First major","Science, Technology and Society","2013",NA
-"Master","First major","Natural Sciences","2013",NA
-"Master","First major","Computational Science","2013",NA
-"Master","First major","Human Computer Interaction","2013",NA
-"Master","First major","Physical Sciences","2013",21
-"Master","First major","Science Technologies/Technicians","2013",NA
-"Master","First major","Electrical/Electronics Maintenance and Repair Technology","2013",NA
-"Master","First major","Precision Systems Maintenance and Repair Technologies","2013",NA
-"Master","First major","Medical Illustration and Informatics","2013",NA
+"Bachelor","First major","Communications Technology/Technician",2010,17
+"Bachelor","First major","Communications Technologies/Technicians and Support Services, Other",2010,NA
+"Bachelor","First major","Computer and Information Sciences and Support Services",2010,511
+"Bachelor","First major","Engineering",2010,1193
+"Bachelor","First major","Engineering Technologies and Engineering-related Fields",2010,237
+"Bachelor","First major","Biological and Biomedical Sciences",2010,1039
+"Bachelor","First major","Mathematics and Statistics",2010,25
+"Bachelor","First major","Biological and Physical Sciences",2010,NA
+"Bachelor","First major","Mathematics and Computer Science",2010,NA
+"Bachelor","First major","Science, Technology and Society",2010,NA
+"Bachelor","First major","Natural Sciences",2010,235
+"Bachelor","First major","Computational Science",2010,NA
+"Bachelor","First major","Human Computer Interaction",2010,NA
+"Bachelor","First major","Electrical/Electronics Maintenance and Repair Technology",2010,0
+"Bachelor","First major","Precision Systems Maintenance and Repair Technologies",2010,NA
+"Bachelor","First major","Medical Illustration and Informatics",2010,NA
+"Bachelor","First major","Physical Sciences",2010,258
+"Bachelor","First major","Science Technologies/Technicians",2010,14
+"Doctor","First major","Biological and Biomedical Sciences",2010,25
+"Doctor","First major","Biological and Physical Sciences",2010,0
+"Doctor","First major","Communications Technologies/Technicians and Support Services, Other",2010,0
+"Doctor","First major","Communications Technology/Technician",2010,0
+"Doctor","First major","Computational Science",2010,0
+"Doctor","First major","Computer and Information Sciences and Support Services",2010,4
+"Doctor","First major","Electrical/Electronics Maintenance and Repair Technology",2010,0
+"Doctor","First major","Engineering",2010,12
+"Doctor","First major","Engineering Technologies and Engineering-related Fields",2010,0
+"Doctor","First major","Human Computer Interaction",2010,0
+"Doctor","First major","Mathematics and Computer Science",2010,0
+"Doctor","First major","Mathematics and Statistics",2010,2
+"Doctor","First major","Medical Illustration and Informatics",2010,0
+"Doctor","First major","Natural Sciences",2010,0
+"Doctor","First major","Physical Sciences",2010,17
+"Doctor","First major","Precision Systems Maintenance and Repair Technologies",2010,0
+"Doctor","First major","Science Technologies/Technicians",2010,0
+"Doctor","First major","Science, Technology and Society",2010,0
+"Master","First major","Computer and Information Sciences and Support Services",2010,68
+"Master","First major","Engineering",2010,168
+"Master","First major","Engineering Technologies and Engineering-related Fields",2010,106
+"Master","First major","Biological and Biomedical Sciences",2010,51
+"Master","First major","Mathematics and Statistics",2010,24
+"Master","First major","Biological and Physical Sciences",2010,NA
+"Master","First major","Mathematics and Computer Science",2010,NA
+"Master","First major","Science, Technology and Society",2010,NA
+"Master","First major","Natural Sciences",2010,NA
+"Master","First major","Computational Science",2010,NA
+"Master","First major","Human Computer Interaction",2010,NA
+"Master","First major","Physical Sciences",2010,36
+"Master","First major","Science Technologies/Technicians",2010,NA
+"Master","First major","Electrical/Electronics Maintenance and Repair Technology",2010,NA
+"Master","First major","Precision Systems Maintenance and Repair Technologies",2010,NA
+"Master","First major","Medical Illustration and Informatics",2010,NA
+"Bachelor","First major","Communications Technology/Technician",2011,34
+"Bachelor","First major","Communications Technologies/Technicians and Support Services, Other",2011,NA
+"Bachelor","First major","Computer and Information Sciences and Support Services",2011,490
+"Bachelor","First major","Engineering",2011,1014
+"Bachelor","First major","Engineering Technologies and Engineering-related Fields",2011,188
+"Bachelor","First major","Biological and Biomedical Sciences",2011,1116
+"Bachelor","First major","Mathematics and Statistics",2011,36
+"Bachelor","First major","Biological and Physical Sciences",2011,NA
+"Bachelor","First major","Mathematics and Computer Science",2011,NA
+"Bachelor","First major","Science, Technology and Society",2011,NA
+"Bachelor","First major","Natural Sciences",2011,171
+"Bachelor","First major","Computational Science",2011,NA
+"Bachelor","First major","Human Computer Interaction",2011,NA
+"Bachelor","First major","Electrical/Electronics Maintenance and Repair Technology",2011,0
+"Bachelor","First major","Precision Systems Maintenance and Repair Technologies",2011,NA
+"Bachelor","First major","Medical Illustration and Informatics",2011,NA
+"Bachelor","First major","Physical Sciences",2011,235
+"Bachelor","First major","Science Technologies/Technicians",2011,6
+"Doctor","First major","Biological and Biomedical Sciences",2011,24
+"Doctor","First major","Biological and Physical Sciences",2011,0
+"Doctor","First major","Communications Technologies/Technicians and Support Services, Other",2011,0
+"Doctor","First major","Communications Technology/Technician",2011,0
+"Doctor","First major","Computational Science",2011,0
+"Doctor","First major","Computer and Information Sciences and Support Services",2011,0
+"Doctor","First major","Electrical/Electronics Maintenance and Repair Technology",2011,0
+"Doctor","First major","Engineering",2011,3
+"Doctor","First major","Engineering Technologies and Engineering-related Fields",2011,0
+"Doctor","First major","Human Computer Interaction",2011,0
+"Doctor","First major","Mathematics and Computer Science",2011,0
+"Doctor","First major","Mathematics and Statistics",2011,2
+"Doctor","First major","Medical Illustration and Informatics",2011,0
+"Doctor","First major","Natural Sciences",2011,0
+"Doctor","First major","Physical Sciences",2011,18
+"Doctor","First major","Precision Systems Maintenance and Repair Technologies",2011,0
+"Doctor","First major","Science Technologies/Technicians",2011,0
+"Doctor","First major","Science, Technology and Society",2011,0
+"Master","First major","Computer and Information Sciences and Support Services",2011,73
+"Master","First major","Engineering",2011,110
+"Master","First major","Engineering Technologies and Engineering-related Fields",2011,135
+"Master","First major","Biological and Biomedical Sciences",2011,60
+"Master","First major","Mathematics and Statistics",2011,28
+"Master","First major","Biological and Physical Sciences",2011,NA
+"Master","First major","Mathematics and Computer Science",2011,NA
+"Master","First major","Science, Technology and Society",2011,NA
+"Master","First major","Natural Sciences",2011,NA
+"Master","First major","Computational Science",2011,NA
+"Master","First major","Human Computer Interaction",2011,NA
+"Master","First major","Physical Sciences",2011,11
+"Master","First major","Science Technologies/Technicians",2011,NA
+"Master","First major","Electrical/Electronics Maintenance and Repair Technology",2011,NA
+"Master","First major","Precision Systems Maintenance and Repair Technologies",2011,NA
+"Master","First major","Medical Illustration and Informatics",2011,NA
+"Bachelor","First major","Communications Technology/Technician",2012,37
+"Bachelor","First major","Communications Technologies/Technicians and Support Services, Other",2012,NA
+"Bachelor","First major","Computer and Information Sciences and Support Services",2012,629
+"Bachelor","First major","Engineering",2012,1138
+"Bachelor","First major","Engineering Technologies and Engineering-related Fields",2012,240
+"Bachelor","First major","Biological and Biomedical Sciences",2012,1361
+"Bachelor","First major","Mathematics and Statistics",2012,17
+"Bachelor","First major","Biological and Physical Sciences",2012,NA
+"Bachelor","First major","Mathematics and Computer Science",2012,NA
+"Bachelor","First major","Science, Technology and Society",2012,NA
+"Bachelor","First major","Natural Sciences",2012,196
+"Bachelor","First major","Computational Science",2012,NA
+"Bachelor","First major","Human Computer Interaction",2012,NA
+"Bachelor","First major","Electrical/Electronics Maintenance and Repair Technology",2012,0
+"Bachelor","First major","Precision Systems Maintenance and Repair Technologies",2012,NA
+"Bachelor","First major","Medical Illustration and Informatics",2012,NA
+"Bachelor","First major","Physical Sciences",2012,273
+"Bachelor","First major","Science Technologies/Technicians",2012,8
+"Doctor","First major","Biological and Biomedical Sciences",2012,21
+"Doctor","First major","Biological and Physical Sciences",2012,0
+"Doctor","First major","Communications Technologies/Technicians and Support Services, Other",2012,0
+"Doctor","First major","Communications Technology/Technician",2012,0
+"Doctor","First major","Computational Science",2012,0
+"Doctor","First major","Computer and Information Sciences and Support Services",2012,1
+"Doctor","First major","Electrical/Electronics Maintenance and Repair Technology",2012,0
+"Doctor","First major","Engineering",2012,11
+"Doctor","First major","Engineering Technologies and Engineering-related Fields",2012,0
+"Doctor","First major","Human Computer Interaction",2012,0
+"Doctor","First major","Mathematics and Computer Science",2012,0
+"Doctor","First major","Mathematics and Statistics",2012,1
+"Doctor","First major","Medical Illustration and Informatics",2012,0
+"Doctor","First major","Natural Sciences",2012,0
+"Doctor","First major","Physical Sciences",2012,25
+"Doctor","First major","Precision Systems Maintenance and Repair Technologies",2012,0
+"Doctor","First major","Science Technologies/Technicians",2012,0
+"Doctor","First major","Science, Technology and Society",2012,0
+"Master","First major","Computer and Information Sciences and Support Services",2012,98
+"Master","First major","Engineering",2012,179
+"Master","First major","Engineering Technologies and Engineering-related Fields",2012,90
+"Master","First major","Biological and Biomedical Sciences",2012,81
+"Master","First major","Mathematics and Statistics",2012,25
+"Master","First major","Biological and Physical Sciences",2012,NA
+"Master","First major","Mathematics and Computer Science",2012,NA
+"Master","First major","Science, Technology and Society",2012,NA
+"Master","First major","Natural Sciences",2012,NA
+"Master","First major","Computational Science",2012,NA
+"Master","First major","Human Computer Interaction",2012,NA
+"Master","First major","Physical Sciences",2012,13
+"Master","First major","Science Technologies/Technicians",2012,NA
+"Master","First major","Electrical/Electronics Maintenance and Repair Technology",2012,NA
+"Master","First major","Precision Systems Maintenance and Repair Technologies",2012,NA
+"Master","First major","Medical Illustration and Informatics",2012,NA
+"Bachelor","First major","Communications Technology/Technician",2013,42
+"Bachelor","First major","Communications Technologies/Technicians and Support Services, Other",2013,NA
+"Bachelor","First major","Computer and Information Sciences and Support Services",2013,605
+"Bachelor","First major","Engineering",2013,1095
+"Bachelor","First major","Engineering Technologies and Engineering-related Fields",2013,226
+"Bachelor","First major","Biological and Biomedical Sciences",2013,1429
+"Bachelor","First major","Mathematics and Statistics",2013,24
+"Bachelor","First major","Biological and Physical Sciences",2013,NA
+"Bachelor","First major","Mathematics and Computer Science",2013,NA
+"Bachelor","First major","Science, Technology and Society",2013,NA
+"Bachelor","First major","Natural Sciences",2013,206
+"Bachelor","First major","Computational Science",2013,NA
+"Bachelor","First major","Human Computer Interaction",2013,NA
+"Bachelor","First major","Electrical/Electronics Maintenance and Repair Technology",2013,0
+"Bachelor","First major","Precision Systems Maintenance and Repair Technologies",2013,NA
+"Bachelor","First major","Medical Illustration and Informatics",2013,NA
+"Bachelor","First major","Physical Sciences",2013,230
+"Bachelor","First major","Science Technologies/Technicians",2013,5
+"Doctor","First major","Biological and Biomedical Sciences",2013,27
+"Doctor","First major","Biological and Physical Sciences",2013,0
+"Doctor","First major","Communications Technologies/Technicians and Support Services, Other",2013,0
+"Doctor","First major","Communications Technology/Technician",2013,0
+"Doctor","First major","Computational Science",2013,0
+"Doctor","First major","Computer and Information Sciences and Support Services",2013,4
+"Doctor","First major","Electrical/Electronics Maintenance and Repair Technology",2013,0
+"Doctor","First major","Engineering",2013,6
+"Doctor","First major","Engineering Technologies and Engineering-related Fields",2013,0
+"Doctor","First major","Human Computer Interaction",2013,0
+"Doctor","First major","Mathematics and Computer Science",2013,0
+"Doctor","First major","Mathematics and Statistics",2013,1
+"Doctor","First major","Medical Illustration and Informatics",2013,0
+"Doctor","First major","Natural Sciences",2013,0
+"Doctor","First major","Physical Sciences",2013,30
+"Doctor","First major","Precision Systems Maintenance and Repair Technologies",2013,0
+"Doctor","First major","Science Technologies/Technicians",2013,0
+"Doctor","First major","Science, Technology and Society",2013,0
+"Master","First major","Communications Technology/Technician",2013,NA
+"Master","First major","Communications Technologies/Technicians and Support Services, Other",2013,NA
+"Master","First major","Computer and Information Sciences and Support Services",2013,95
+"Master","First major","Engineering",2013,176
+"Master","First major","Engineering Technologies and Engineering-related Fields",2013,90
+"Master","First major","Biological and Biomedical Sciences",2013,87
+"Master","First major","Mathematics and Statistics",2013,28
+"Master","First major","Biological and Physical Sciences",2013,NA
+"Master","First major","Mathematics and Computer Science",2013,NA
+"Master","First major","Science, Technology and Society",2013,NA
+"Master","First major","Natural Sciences",2013,NA
+"Master","First major","Computational Science",2013,NA
+"Master","First major","Human Computer Interaction",2013,NA
+"Master","First major","Physical Sciences",2013,21
+"Master","First major","Science Technologies/Technicians",2013,NA
+"Master","First major","Electrical/Electronics Maintenance and Repair Technology",2013,NA
+"Master","First major","Precision Systems Maintenance and Repair Technologies",2013,NA
+"Master","First major","Medical Illustration and Informatics",2013,NA

@@ -31,14 +31,14 @@ setwd( paste( DATADIR, "/Indicator001", sep = ""))
 #+ not used for this file, hence this functionality is set to FALSE.
 #+ year -- optional numeric value for the year of the dataset used.
 PARAMS <- list( 
+year = NULL,
 startRow = 6, 
-sheet = 1,
+sheet = 3,
 colNames = FALSE,
 rowNames = FALSE,
 rows = 1:405,
 cols = 1:19,
-detectDates = FALSE,
-year = NULL
+detectDates = FALSE
 )
 
 #+ An R package called "openxlsx" was made use of, in order to import Excel 
@@ -55,7 +55,7 @@ attach(PARAMS)
 #+ Using the read.xlsx() function, the original Excel Workbook was transformed 
 #+ into a data.frame object in R, using the parameters given in PARAMS.
 dats1 <- do.call( read.xlsx, c( list( xlsxFile = 
-"./Original_Data/Indicator 001 Database.xlsx", PARAMS)))
+tcltk::tk_choose.files(multi = FALSE)), PARAMS[-1]))
 #+ Detach PARAMS from the R search path for the rest of the procedure.
 detach(PARAMS)
 

@@ -15,14 +15,14 @@ PARAMS <- list(
 sheet = 1,
 startRow = 1,
 rows = 1:5,
-cols = 1:3
+cols = 1:3,
+xlsxFile = tcltk::tk_choose.files( multi = FALSE)
 )
 
 attach(PARAMS)
 
 # Read the original data.
-dats1 <- do.call( read.xlsx, c( PARAMS, list(xlsxFile = 
-"./Original_Data/Indicator 025 Database.xlsx")) )
+dats1 <- do.call( read.xlsx, PARAMS)
 
 detach(PARAMS)
 
