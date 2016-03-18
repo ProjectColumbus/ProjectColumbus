@@ -97,7 +97,7 @@ check_str <- checkStr( name_list900, fix_names)
 # File Structure Validation
 # Its sole purpose is to display a warning message in case there is a 
 # structural issue with the user-changed data.frames.
-while( any(check_str == FALSE))
+while( any(sapply(check_str, function(x) x) == FALSE))
 {
 #+ Create a basic GUI to display the warning message.
     warning <- tktoplevel()
@@ -167,5 +167,15 @@ naics$naics_recode)] )
 dats3 <- tapply( dats3$key[ !duplicated(dats3$key) ], dats3$NAICS[ 
 !duplicated(dats3$key) ], FUN = length)
 
+load("../Master_Scripts/SectorDescs.RData")
+attach(DESCS)
+
+dats3 <- data.frame( naics_code = names(dats3), naics_desc =
+naicslist$naics_desc[ match( names(dats3), naicslist$naics_code) ], firm_num =
+dats3, stringsAsFactors = FALSE)
+
+detach(DESCS)
+
+
 # Write the final results.
-write.csv( dats3, "./Stage3/results_indicator023_stage3.csv")
+write.csv( dats3, "./Stage3/results_indicator023_stage3y.csv")

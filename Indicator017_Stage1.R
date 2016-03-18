@@ -43,6 +43,9 @@ colnames(dats3) <- scan(what = "", sep = "\n", file = "./Stage1/Changed_Names")
 dats3 <- unlist(dats3[ dats3$code == "PR",grep("patents|total|sirs",
 colnames(dats3)), drop = TRUE])
 
-# Write the final results.
-write.csv( dats3, "./Stage3/results_indicator017_stage3.csv")
+names( dats3) <- c("Utility", "Design", "Plant", "Reissue",
+"Total (less SIRs)", "SIRs", "Grand Total")
+#
+# # Write the final results.
+# write.csv( dats3, "./Stage3/results_indicator017_stage3.csv")
 

@@ -43,10 +43,22 @@ what = "")
 # Subset the data.
 dats3 <- dats2[ dats2$state_code == "PR" & dats2$occupational_code %in% 
 codelist_occ,c("occupational_code", "occupational_code_title", 
-"total_employment", "annual_mean_wage")]
+"total_employment")]
 
 # Format it properly (will produce NA's if not numeric or blank).
 dats3$total_employment <- as.numeric(dats3$total_employment)
+dats3$employment_pct_share <- prop.table( dats3$total_employment)
+
+load("../Master_Scripts/SectorDescs.RData")
+
+attach(DESCS)
+
+dats3$occupational_code_title <- soclist$soc_desc[ match(
+dats3$occupational_code, soclist$soc_code) ]
+
+detach(DESCS)
+
+dats3 <- dats3[ order(dats3$occupational_code),]
 
 # Write the final results.
-write.csv( dats3, "./Stage3/results_indicator003_stage3.csv", row.names = F)
+write.csv( dats3, "./Stage3/results_indicator003_stage3y.csv", row.names = F)

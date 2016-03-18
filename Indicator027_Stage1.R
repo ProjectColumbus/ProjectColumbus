@@ -39,7 +39,7 @@ PARAMS <- list(
         )
     )
 # Year of the data must be supplied externally for the GUI.
-YEAR <- 2015
+YEAR <- 2014
 
 # Read the original data. Component 3 is retrieved via GUI, and hence has no
 # parameters.
@@ -117,7 +117,8 @@ dats3 <- as.matrix(dats3)
 
 # Add proper labels to the data.
 rownames(dats3) <- YEAR
-colnames(dats3) <- "Education Expenses in Puerto Rico ($ millions)"
+colnames(dats3) <- paste("Total Education Expenses -- K-12 and Postsecondary",
+"($ millions)")
 
 # Write the final results.
 write.csv( dats3, "./Stage3/results_indicator027_stage3.csv")

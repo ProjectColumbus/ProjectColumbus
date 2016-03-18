@@ -140,13 +140,23 @@ naics0), "naics_desc"], gross_prod_nominal = dats2[ match( naics1, naics0),
 "gross_prod"] )
 
 dats3$gross_prod_share <- prop.table(dats3$gross_prod_nominal)
- 
+dats3 <- dats3[ order( dats3$naics_code),]
+
 #+ If a year was specified, replace the column_name "gross_prod_nominal" with 
 #+ said year.
 if( !is.null(PARAMS$year) ) colnames(dats3)[3] <- as.character( PARAMS$year)
 
+load("../Master_Scripts/SectorDescs.RData")
+attach( DESCS)
+
+dats3$naics_desc <- DESCS[[2]]$naics_desc[ match(dats3$naics_code,
+DESCS[[2]]$naics_code)]
+
+detach(DESCS)
+
+dats3 <- dats3[ order(dats3$naics_code),]
 #+ Stage 3 Complete -- Write dats3 as final output
-write.csv( dats3, "./Stage3/results_indicator001_stage3.csv", row.names = F)
+write.csv( dats3, "./Stage3/results_indicator001_stage3y.csv", row.names = F)
 
 #+ Back Up All Procedures in an R Workspace File
 save.image("Indicator001.RData")

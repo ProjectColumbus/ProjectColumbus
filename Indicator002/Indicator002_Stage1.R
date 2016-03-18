@@ -78,7 +78,7 @@ colnames(dats1) <- var_list$varname
 
 # Convert every column of employment to numeric.
 vnum <- grep("^emp_m[1-3]$|^tot_wages$", colnames(dats1))
-dats1[, v] <- sapply( v, function(x) as.numeric(dats1[,x]) )
+dats1[, vnum] <- sapply( vnum, function(x) as.numeric(dats1[,x]) )
 
 # Output the file as a csv, for raw-data backup and (perhaps) manual validation
 # purposes.
@@ -93,5 +93,4 @@ with(DATS1,
 
 rm(dats1, var_list); attach(DATS1);
 # Proceed with Stage 2.
-source( paste(DATADIR_ROOT, "/prep_scripts/Indicator002/Indicator002_Stage2.R",
-sep = ""))
+source( "../../Indicator002/Indicator002_Stage2.R")

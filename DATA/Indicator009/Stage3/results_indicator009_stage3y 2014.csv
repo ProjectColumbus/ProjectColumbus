@@ -1,0 +1,14 @@
+"naics_code","naics_title","total_employees","ICT_employees","ICT_employees_pct_share"
+"511","Publishing Industries (except Internet)",2810,120,0.0521739130434783
+"5111","Newspaper, Periodical, Book, and Directory Publishers",2600,0,0
+"517","Telecommunications",9580,590,0.256521739130435
+"518","Data Processing, Hosting, and Related Services",1940,180,0.0782608695652174
+"5191","Other Information Services",170,0,0
+"5413","Architectural, Engineering, and Related Services",4800,0,0
+"5414","Specialized Design Services",230,0,0
+"5415","Computer Systems Design and Related Services",3530,980,0.426086956521739
+"5416","Management, Scientific, and Technical Consulting Services",6030,280,0.121739130434783
+"54171","Research and Development in the Physical, Engineering, and Life Sciences",720,0,0
+"6114","Business Schools and Computer and Management Training",900,0,0
+"6215","Medical and Diagnostic Laboratories",5780,0,0
+"6221","General Medical and Surgical Hospitals",31320,150,0.0652173913043478

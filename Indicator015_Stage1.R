@@ -38,7 +38,8 @@ rownames(dats1) <- scan(what = "", sep = "\n", file = "./Stage1/Changed_Names")
 # on a multi-level outline and did not include all the relevant information
 # for a particular data point ( they are understandable only through context
 # and indentation).
-dats2 <- dats1[ c("total_households", "computer_desktoplaptop",
+dats2 <- dats1[ c("total_households",
+"households_with_computer", "computer_desktoplaptop",
 "computer_handheld", "computer_other", "households_without_computer"),1]
 
 dats3 <- as.numeric( gsub("\\,", "", dats2))
@@ -46,10 +47,18 @@ dats3 <- as.numeric( gsub("\\,", "", dats2))
 # Calculate additional indicators.
 dats3 <- c( dats3, pct_with_desktoplaptop = dats3[2] / dats3[1] * 100,
 pct_without_computer = dats3[5] / dats3[1] * 100)
-names(dats3)[1:5]  <- rownames(dats1)[c(1,3,5,7,9)]
+names(dats3)[1:6]  <- rownames(dats1)[c(1:3,5,7,9)]
+
+dats3 <- dats3[ c(1,2,3, 7, 4:6, 8) ]
+
+names(dats3) <- c("Total Households", "    Households with Computers",
+"       With a Desktop/Laptop", "            As % of Total Households",
+"       With a Handheld Computer", "        With Other Computer Types",
+"    Households without Computers", "        As % of Total Households")
+
 
 # Write the final results.
-write.csv(dats3, "./Stage3/results_indicator015_stage3.csv")
+write.csv(as.data.frame(dats3), "./Stage3/results_indicator015_stage3y.csv")
 
 
  

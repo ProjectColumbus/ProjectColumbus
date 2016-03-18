@@ -20,5 +20,13 @@ dats3 <- dats1[, c("naics_code", "naics_title")]
 dats3$ICT_share <- sprintf("%1.1f%%", dats1$ICT_employees / 
 dats1$total_employees * 100)
 
+load("../Master_Scripts/SectorDescs.RData")
+attach(DESCS)
+
+dats3$naics_title <- naicslist$naics_desc[ match(dats3$naics_code,
+naicslist$naics_code)]
+
+detach(DESCS)
+
 # Write the final results.
 write.csv(dats3, "./Stage3/results_indicator013_stage3.csv", row.names = F)

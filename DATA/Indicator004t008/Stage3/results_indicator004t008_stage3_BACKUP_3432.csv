@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+Main Sector,Amount (in $ millions)
+Private (Services),157.41
+Public & Nonprofit,153
+Total GERD in Services,310.41
+Total GERD,450
+=======
+"sector","Amount"
+"Private (Services)",139.59
+"Public and Nonprofit",153
+"Total GERD in Services",310.41
+"Total GERD",450
+>>>>>>> a8e151187b1e294098f810dd732a0a7dda3ab561

@@ -64,7 +64,14 @@ dats2$year))
 
 # Select the columns to use.
 dats3 <- dats2[,c(-1,-6)]
+dats3$CIP_code <- gsub("\\.0000$", "", as.character(dats3$CIP_code))
 
-# Write the final results.
-write.csv(dats3, "./Stage3/results_indicator025_stage3.csv",row.names = FALSE)
+load("../Master_Scripts/SectorDescs.RData")
+attach(DESCS)
+
+dats3$CIP_desc <- ciplist$cip_desc[ match( dats3$CIP_code, ciplist$cip_code) ]
+
+detach(DESCS)
+Write the final results.
+write.csv(dats3, "./Stage3/results_indicator025_stage3y.csv",row.names = FALSE)
 

@@ -12,6 +12,6 @@ filters = matrix( c("R Data Files", ".RData"), 1, 2, byrow = TRUE)
 # The data is obtained directly from the results in Indicator 012.
 load(tcltk::tk_choose.files(multi = FALSE, filters = filters))
 
-# Select the appropriate columns, and write file.
+# # Select the appropriate columns, and write file.
 write.csv(dats3[,-c(6,7)], "./Stage3/results_indicator026_stage3.csv",
 row.names = FALSE)

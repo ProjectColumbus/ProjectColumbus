@@ -81,7 +81,25 @@ naics <- sapply(codelist_naics, function(x)
 # be referenced instead of the column numbers here?
 dats3 <- dats1[ naics0 %in% naics, c(1:2, 9:12)]
 
-dats3 <- melt( dats3, id = colnames(dats3)[1:2])
+dats3$naics_code <- gsub("0+$", "", dats3$naics_code)
+dats3[,3:ncol(dats3)] <- sapply( dats3[,3:ncol(dats3)], function(x) as.numeric(
+gsub("^\\$([0-9]+)(\\,[0-9]+)*\\.([0-9]+)", "\\1\\2.\\3", x)) )
+
+
+load("../Master_Scripts/SectorDescs.RData")
+attach( DESCS)
+
+dats3$naics_title_code <- naicslist$naics_desc[ match( dats3$naics_code,
+naicslist$naics_code) ]
+
+detach(DESCS)
+
+dats3 <- dats3[ order(dats3$naics_code),]
+
+dats3[ nrow(dats3) + 1,] <- c("", "Total", colSums(dats3[,-c(1:2)], na.rm =
+TRUE))
+
+dats3 <- melt(dats3, id.vars = c("naics_code", "naics_title_code"))
 
 # Write the data.
-write.csv( dats3, "./Stage3/results_indicator011_stage3.csv", row.names = F)
+write.csv( dats3, "./Stage3/results_indicator011_stage3y.csv", row.names = F)

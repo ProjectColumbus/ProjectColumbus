@@ -75,5 +75,19 @@ dats3 <- do.call(rbind, result_list)
 dats3 <- aggregate( dats3[, -grep("NAICS", colnames(dats3))], by = list(
 NAICS = dats3$NAICS), FUN = sum, na.rm = T)
 
+load("../Master_Scripts/SectorDescs.RData")
+
+attach(DESCS)
+
+dats3 <- data.frame( naics_code = dats3[,1], naics_desc = naicslist$naics_desc[
+match(
+dats3[,1], naicslist$naics_code)], dats3[,2:ncol(dats3)], stringsAsFactors =
+FALSE)
+
+detach(DESCS)
+
+dats3[nrow(dats3) + 1,] <-  c( "", "Total", colSums( dats3[,-c(1,2)], na.rm =
+TRUE))
+
 # Write the final results.
-write.csv(dats3, "./Stage3/results_indicator002_stage3.csv", row.names = F)
+write.csv(dats3, "./Stage3/results_indicator002_stage3y.csv", row.names = F)

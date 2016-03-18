@@ -88,9 +88,23 @@ dats3$Doctor[,1:4], FUN = sum, na.rm = T, sort = F)
 dats3 <- do.call(rbind, dats3)
 rownames(dats3) <- NULL
 
+load("../Master_Scripts/SectorDescs.RData")
+attach(DESCS)
+
+dats3$cip_description <- ciplist$cip_desc[ match(tolower(
+dats3$cip_description), tolower(ciplist$cip_desc))]
+
+dats3 <- data.frame( cip_code = ciplist$cip_code[  match(tolower(
+dats3$cip_description), tolower(ciplist$cip_desc)) ], dats3, stringsAsFactors =
+FALSE)
+
+detach(DESCS)
+
+dats3 <- dats3[ ,c(1,4,2,5:ncol(dats3))]
+
 # Save as .RData, as this will be used in other indicators.
-save(dats3, file = "./Stage3/database_indicator012_stage3.RData")
+save(dats3, file = "./Stage3/database_indicator012_stage3y.RData")
 
 # Write the final results.
-write.csv( dats3[,-c(5,7)], "./Stage3/results_indicator012_stage3.csv",
+write.csv( dats3[,-c(5,7)], "./Stage3/results_indicator012_stage3y.csv",
 row.names = F)

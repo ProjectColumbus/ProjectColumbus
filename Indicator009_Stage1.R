@@ -76,7 +76,7 @@ dats2$occupational_code %in% c(codelist_occ,"00-0000"), c("naics_code",
 
 # Create an instance for storing the total amount of employees.
 dats3i1 <- dats3[ dats3$occupational_code == "00-0000", c("naics_code",
-"naics_title", "total_employees", "annual_mean_wage")]
+"naics_title", "total_employees")]
 
 # Trailing spaces must be removed from the codes in the final instance, as the
 # data in dats2 was never modified (only a copy, naics0)
@@ -94,8 +94,21 @@ dats3i1$total_employees
 # Combine the ICT employees and total employees into the stage 3 output.
 dats3 <- cbind( dats3i1, ICT_employees = dats3i2)
 
+dats3$ICT_employees_pct_share <- prop.table(dats3$ICT_employees)
+
+load("../Master_Scripts/SectorDescs.RData")
+
+attach(DESCS)
+
+dats3$naics_title <- naicslist$naics_desc[ match( dats3$naics_code,
+naicslist$naics_code) ]
+
+detach(DESCS)
+
+dats3 <- dats3[ order(dats3$naics_code),]
+
 # Save data (for use in other indicators).
-save(dats3, file = "./Stage3/database_indicator009_stage3.RData")
+save(dats3, file = "./Stage3/database_indicator009_stage3y.RData")
 
 # Write the final results.
-write.csv( dats3, "./Stage3/results_indicator009_stage3.csv", row.names = F)
+write.csv( dats3, "./Stage3/results_indicator009_stage3y.csv", row.names = F)
