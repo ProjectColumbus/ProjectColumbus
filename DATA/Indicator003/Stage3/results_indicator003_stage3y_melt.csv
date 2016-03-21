@@ -1,0 +1,97 @@
+"year","occupational_code","occupational_code_title","variable","value"
+"2012","11-3021","Computer and Information Systems Managers","total_employment",1000
+"2012","15-1121","Computer Systems Analysts","total_employment",1030
+"2012","15-1122","Information Security Analysts","total_employment",160
+"2012","15-1131","Computer Programmers","total_employment",1290
+"2012","15-1132","Software Developers, Applications","total_employment",390
+"2012","15-1133","Software Developers, Systems Software","total_employment",550
+"2012","15-1134","Web Developers","total_employment",110
+"2012","15-1141","Database Administrators","total_employment",350
+"2012","15-1142","Network and Computer Systems Administrators","total_employment",910
+"2012","15-1143","Computer Network Architects","total_employment",390
+"2012","15-1151","Computer User Support Specialists","total_employment",2920
+"2012","15-1152","Computer Network Support Specialists","total_employment",530
+"2012","15-2041","Statisticians","total_employment",230
+"2012","17-2061","Computer Hardware Engineers","total_employment",170
+"2012","43-9011","Computer Operators","total_employment",860
+"2012","43-9021","Data Entry Keyers","total_employment",2780
+"2012","11-3021","Computer and Information Systems Managers","employment_pct_share",0.0731528895391368
+"2012","15-1121","Computer Systems Analysts","employment_pct_share",0.0753474762253109
+"2012","15-1122","Information Security Analysts","employment_pct_share",0.0117044623262619
+"2012","15-1131","Computer Programmers","employment_pct_share",0.0943672275054865
+"2012","15-1132","Software Developers, Applications","employment_pct_share",0.0285296269202634
+"2012","15-1133","Software Developers, Systems Software","employment_pct_share",0.0402340892465252
+"2012","15-1134","Web Developers","employment_pct_share",0.00804681784930505
+"2012","15-1141","Database Administrators","employment_pct_share",0.0256035113386979
+"2012","15-1142","Network and Computer Systems Administrators","employment_pct_share",0.0665691294806145
+"2012","15-1143","Computer Network Architects","employment_pct_share",0.0285296269202634
+"2012","15-1151","Computer User Support Specialists","employment_pct_share",0.213606437454279
+"2012","15-1152","Computer Network Support Specialists","employment_pct_share",0.0387710314557425
+"2012","15-2041","Statisticians","employment_pct_share",0.0168251645940015
+"2012","17-2061","Computer Hardware Engineers","employment_pct_share",0.0124359912216533
+"2012","43-9011","Computer Operators","employment_pct_share",0.0629114850036576
+"2012","43-9021","Data Entry Keyers","employment_pct_share",0.2033650329188
+"2013","11-3021","Computer and Information Systems Managers","total_employment",1030
+"2013","15-1121","Computer Systems Analysts","total_employment",1010
+"2013","15-1122","Information Security Analysts","total_employment",190
+"2013","15-1131","Computer Programmers","total_employment",1340
+"2013","15-1132","Software Developers, Applications","total_employment",320
+"2013","15-1133","Software Developers, Systems Software","total_employment",470
+"2013","15-1134","Web Developers","total_employment",90
+"2013","15-1141","Database Administrators","total_employment",400
+"2013","15-1142","Network and Computer Systems Administrators","total_employment",680
+"2013","15-1143","Computer Network Architects","total_employment",390
+"2013","15-1151","Computer User Support Specialists","total_employment",2850
+"2013","15-1152","Computer Network Support Specialists","total_employment",540
+"2013","15-2041","Statisticians","total_employment",250
+"2013","17-2061","Computer Hardware Engineers","total_employment",280
+"2013","43-9011","Computer Operators","total_employment",780
+"2013","43-9021","Data Entry Keyers","total_employment",2900
+"2013","11-3021","Computer and Information Systems Managers","employment_pct_share",0.0761834319526627
+"2013","15-1121","Computer Systems Analysts","employment_pct_share",0.0747041420118343
+"2013","15-1122","Information Security Analysts","employment_pct_share",0.0140532544378698
+"2013","15-1131","Computer Programmers","employment_pct_share",0.099112426035503
+"2013","15-1132","Software Developers, Applications","employment_pct_share",0.0236686390532544
+"2013","15-1133","Software Developers, Systems Software","employment_pct_share",0.0347633136094675
+"2013","15-1134","Web Developers","employment_pct_share",0.00665680473372781
+"2013","15-1141","Database Administrators","employment_pct_share",0.029585798816568
+"2013","15-1142","Network and Computer Systems Administrators","employment_pct_share",0.0502958579881657
+"2013","15-1143","Computer Network Architects","employment_pct_share",0.0288461538461538
+"2013","15-1151","Computer User Support Specialists","employment_pct_share",0.210798816568047
+"2013","15-1152","Computer Network Support Specialists","employment_pct_share",0.0399408284023669
+"2013","15-2041","Statisticians","employment_pct_share",0.018491124260355
+"2013","17-2061","Computer Hardware Engineers","employment_pct_share",0.0207100591715976
+"2013","43-9011","Computer Operators","employment_pct_share",0.0576923076923077
+"2013","43-9021","Data Entry Keyers","employment_pct_share",0.214497041420118
+"2014","11-3021","Computer and Information Systems Managers","total_employment",980
+"2014","15-1121","Computer Systems Analysts","total_employment",1070
+"2014","15-1122","Information Security Analysts","total_employment",230
+"2014","15-1131","Computer Programmers","total_employment",1260
+"2014","15-1132","Software Developers, Applications","total_employment",470
+"2014","15-1133","Software Developers, Systems Software","total_employment",210
+"2014","15-1134","Web Developers","total_employment",110
+"2014","15-1141","Database Administrators","total_employment",450
+"2014","15-1142","Network and Computer Systems Administrators","total_employment",650
+"2014","15-1143","Computer Network Architects","total_employment",390
+"2014","15-1151","Computer User Support Specialists","total_employment",2900
+"2014","15-1152","Computer Network Support Specialists","total_employment",590
+"2014","15-2041","Statisticians","total_employment",240
+"2014","17-2061","Computer Hardware Engineers","total_employment",450
+"2014","43-9011","Computer Operators","total_employment",700
+"2014","43-9021","Data Entry Keyers","total_employment",2750
+"2014","11-3021","Computer and Information Systems Managers","employment_pct_share",0.0728624535315985
+"2014","15-1121","Computer Systems Analysts","employment_pct_share",0.0795539033457249
+"2014","15-1122","Information Security Analysts","employment_pct_share",0.0171003717472119
+"2014","15-1131","Computer Programmers","employment_pct_share",0.0936802973977695
+"2014","15-1132","Software Developers, Applications","employment_pct_share",0.0349442379182156
+"2014","15-1133","Software Developers, Systems Software","employment_pct_share",0.0156133828996283
+"2014","15-1134","Web Developers","employment_pct_share",0.00817843866171004
+"2014","15-1141","Database Administrators","employment_pct_share",0.033457249070632
+"2014","15-1142","Network and Computer Systems Administrators","employment_pct_share",0.0483271375464684
+"2014","15-1143","Computer Network Architects","employment_pct_share",0.028996282527881
+"2014","15-1151","Computer User Support Specialists","employment_pct_share",0.215613382899628
+"2014","15-1152","Computer Network Support Specialists","employment_pct_share",0.0438661710037175
+"2014","15-2041","Statisticians","employment_pct_share",0.0178438661710037
+"2014","17-2061","Computer Hardware Engineers","employment_pct_share",0.033457249070632
+"2014","43-9011","Computer Operators","employment_pct_share",0.0520446096654275
+"2014","43-9021","Data Entry Keyers","employment_pct_share",0.204460966542751

@@ -1,0 +1,79 @@
+"year","naics_code","naics_desc","variable","value"
+"2011",5111,"Newspaper, Periodical, Book, and Directory Publishers","gross_prod_nominal",170117.078400435
+"2011",5112,"Software Publishers","gross_prod_nominal",10603
+"2011",517,"Telecommunications","gross_prod_nominal",1920642.36936603
+"2011",518,"Data Processing, Hosting, and Related Services","gross_prod_nominal",176989.1390642
+"2011",5191,"Other Information Services","gross_prod_nominal",6732.75225788901
+"2011",5413,"Architectural, Engineering, and Related Services","gross_prod_nominal",262758.938826916
+"2011",5414,"Specialized Design Services","gross_prod_nominal",10893.5174850339
+"2011",5415,"Computer Systems Design and Related Services","gross_prod_nominal",167665.780921849
+"2011",5416,"Management, Scientific, and Technical Consulting Services","gross_prod_nominal",295471.396022114
+"2011",5417,"Scientific Research and Development Services","gross_prod_nominal",25204.5943275868
+"2011",6114,"Business Schools and Computer and Management Training","gross_prod_nominal",30683.4498851728
+"2011",6215,"Medical and Diagnostic Laboratories","gross_prod_nominal",240626.386866084
+"2011",6221,"General Medical and Surgical Hospitals","gross_prod_nominal",1553249.46577612
+"2011",5111,"Newspaper, Periodical, Book, and Directory Publishers","gross_prod_share",0.0349198940824374
+"2011",5112,"Software Publishers","gross_prod_share",0.00217647540410109
+"2011",517,"Telecommunications","gross_prod_share",0.394249823351844
+"2011",518,"Data Processing, Hosting, and Related Services","gross_prod_share",0.0363305204155672
+"2011",5191,"Other Information Services","gross_prod_share",0.00138203052826573
+"2011",5413,"Architectural, Engineering, and Related Services","gross_prod_share",0.0539364677510596
+"2011",5414,"Specialized Design Services","gross_prod_share",0.00223610986233344
+"2011",5415,"Computer Systems Design and Related Services","gross_prod_share",0.0344167168052255
+"2011",5416,"Management, Scientific, and Technical Consulting Services","gross_prod_share",0.0606513464168201
+"2011",5417,"Scientific Research and Development Services","gross_prod_share",0.00517374135851537
+"2011",6114,"Business Schools and Computer and Management Training","gross_prod_share",0.00629838479562831
+"2011",6215,"Medical and Diagnostic Laboratories","gross_prod_share",0.049393323832099
+"2011",6221,"General Medical and Surgical Hospitals","gross_prod_share",0.318835165396103
+"2012",5111,"Newspaper, Periodical, Book, and Directory Publishers","gross_prod_nominal",174755.957329608
+"2012",5112,"Software Publishers","gross_prod_nominal",12476.9921195509
+"2012",517,"Telecommunications","gross_prod_nominal",1923548.14467861
+"2012",518,"Data Processing, Hosting, and Related Services","gross_prod_nominal",195435.754638659
+"2012",5191,"Other Information Services","gross_prod_nominal",6772.41832270307
+"2012",5413,"Architectural, Engineering, and Related Services","gross_prod_nominal",281958.445504879
+"2012",5414,"Specialized Design Services","gross_prod_nominal",11558.2723991313
+"2012",5415,"Computer Systems Design and Related Services","gross_prod_nominal",171089.518888991
+"2012",5416,"Management, Scientific, and Technical Consulting Services","gross_prod_nominal",348977.236640054
+"2012",5417,"Scientific Research and Development Services","gross_prod_nominal",29631.5200819798
+"2012",6114,"Business Schools and Computer and Management Training","gross_prod_nominal",35391.5488048757
+"2012",6215,"Medical and Diagnostic Laboratories","gross_prod_nominal",252108.427762751
+"2012",6221,"General Medical and Surgical Hospitals","gross_prod_nominal",1604587.58823403
+"2012",5111,"Newspaper, Periodical, Book, and Directory Publishers","gross_prod_share",0.0346168492974472
+"2012",5112,"Software Publishers","gross_prod_share",0.00247152750892088
+"2012",517,"Telecommunications","gross_prod_share",0.381029506851851
+"2012",518,"Data Processing, Hosting, and Related Services","gross_prod_share",0.0387132442809897
+"2012",5191,"Other Information Services","gross_prod_share",0.00134152670981112
+"2012",5413,"Architectural, Engineering, and Related Services","gross_prod_share",0.0558522477020656
+"2012",5414,"Specialized Design Services","gross_prod_share",0.0022895412545217
+"2012",5415,"Computer Systems Design and Related Services","gross_prod_share",0.0338905762198558
+"2012",5416,"Management, Scientific, and Technical Consulting Services","gross_prod_share",0.0691277859342056
+"2012",5417,"Scientific Research and Development Services","gross_prod_share",0.00586961314971085
+"2012",6114,"Business Schools and Computer and Management Training","gross_prod_share",0.00701059883796053
+"2012",6215,"Medical and Diagnostic Laboratories","gross_prod_share",0.0499393530488869
+"2012",6221,"General Medical and Surgical Hospitals","gross_prod_share",0.317847629203773
+"2013",5111,"Newspaper, Periodical, Book, and Directory Publishers","gross_prod_nominal",180036.813420018
+"2013",5112,"Software Publishers","gross_prod_nominal",13993.9507005266
+"2013",517,"Telecommunications","gross_prod_nominal",1919477.38408176
+"2013",518,"Data Processing, Hosting, and Related Services","gross_prod_nominal",168704.080045992
+"2013",5191,"Other Information Services","gross_prod_nominal",6833.89958408449
+"2013",5413,"Architectural, Engineering, and Related Services","gross_prod_nominal",297164.1667097
+"2013",5414,"Specialized Design Services","gross_prod_nominal",12378.4292968414
+"2013",5415,"Computer Systems Design and Related Services","gross_prod_nominal",187738.468772413
+"2013",5416,"Management, Scientific, and Technical Consulting Services","gross_prod_nominal",393196.31184554
+"2013",5417,"Scientific Research and Development Services","gross_prod_nominal",32747.2975299079
+"2013",6114,"Business Schools and Computer and Management Training","gross_prod_nominal",38730.616645578
+"2013",6215,"Medical and Diagnostic Laboratories","gross_prod_nominal",266556.852471221
+"2013",6221,"General Medical and Surgical Hospitals","gross_prod_nominal",1622269.39828933
+"2013",5111,"Newspaper, Periodical, Book, and Directory Publishers","gross_prod_share",0.035027791786117
+"2013",5112,"Software Publishers","gross_prod_share",0.00272264978529513
+"2013",517,"Telecommunications","gross_prod_share",0.373451700630359
+"2013",518,"Data Processing, Hosting, and Related Services","gross_prod_share",0.0328229059216529
+"2013",5191,"Other Information Services","gross_prod_share",0.00132959702613758
+"2013",5413,"Architectural, Engineering, and Related Services","gross_prod_share",0.0578159786327621
+"2013",5414,"Specialized Design Services","gross_prod_share",0.0024083354721314
+"2013",5415,"Computer Systems Design and Related Services","gross_prod_share",0.0365262185521071
+"2013",5416,"Management, Scientific, and Technical Consulting Services","gross_prod_share",0.0764999017743297
+"2013",5417,"Scientific Research and Development Services","gross_prod_share",0.00637128317062347
+"2013",6114,"Business Schools and Computer and Management Training","gross_prod_share",0.00753539206697812
+"2013",6215,"Medical and Diagnostic Laboratories","gross_prod_share",0.0518610485831143
+"2013",6221,"General Medical and Surgical Hospitals","gross_prod_share",0.315627196598392

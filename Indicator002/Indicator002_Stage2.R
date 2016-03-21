@@ -61,8 +61,3 @@ rm(naics, codelist_naics, dats2,x); attach(DATS2)
 
 # Output the list for validation purposes.
 write.csv( naics, "./Stage2/naics_codes_used.csv", row.names = FALSE)
-
-#
-# # Proceed to Stage 3
-# # source( paste(SCRIPTSDIR, "/Indicator002/Indicator002_Stage3.R", sep = ""))
-#

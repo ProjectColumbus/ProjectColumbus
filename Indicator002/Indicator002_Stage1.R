@@ -55,7 +55,7 @@ detach(PARAMS)
 # Read the original data from the ES-202 bytestream. The fileEncoding was
 # chosen based upon a program which outputted this as input format, but should be
 # chosen on a case-by-case basis.
-dats1 <- scan(file = "./Original_Data/Indicator 002 Database", what = "",    
+dats1 <- scan(file = tcltk::tk_choose.files(multi = FALSE), what = "", 
 sep = "\n", nlines = 100000, fileEncoding = "latin-9")
 
 # Begin a loop throughout the list of variables, and allocate space for the
@@ -91,6 +91,4 @@ with(DATS1,
     var_list = var_list
 })
 
-rm(dats1, var_list); attach(DATS1);
-# Proceed with Stage 2.
-source( "../../Indicator002/Indicator002_Stage2.R")
+rm(dats1, var_list); attach(DATS1)

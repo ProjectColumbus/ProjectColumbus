@@ -16,6 +16,7 @@ library("tcltk")
 # therefore PARAMS is a nested list, with each component having its respective
 # parameters.
 PARAMS <- list(
+    xlsxFile = tcltk::tk_choose.files(multi = FALSE),
     dats1c1 = list(
         sheet = 1,
         startRow = 1,
@@ -43,12 +44,9 @@ YEAR <- 2014
 
 # Read the original data. Component 3 is retrieved via GUI, and hence has no
 # parameters.
-dats1 <- lapply( PARAMS, function(x)
+dats1 <- lapply( PARAMS[-1], function(x)
 {
-    tmp <- c( xlsxFile = "./Original_Data/Indicator 027 Database.xlsx",
-    x)
-    
-    do.call( read.xlsx, tmp)
+    do.call( read.xlsx, c( PARAMS[1], x))
 })
 
 # This function creates a basic GUI to retrieve the necessary data for
@@ -113,12 +111,12 @@ dats3 <- round(dats3 / 1e6,2)
 dats3 <- paste( "$", format( dats3, big.mark = ",", nsmall = 2, scientific = 
 FALSE), sep = "")
 
-dats3 <- as.matrix(dats3)
+dats3 <- data.frame( concept = paste("Total Education Expenses --",
+"K-12 and Postsecondary ($ millions)"), value = unname(dats3), 
+stringsAsFactors = FALSE)
 
-# Add proper labels to the data.
-rownames(dats3) <- YEAR
-colnames(dats3) <- paste("Total Education Expenses -- K-12 and Postsecondary",
-"($ millions)")
+
 
 # Write the final results.
-write.csv( dats3, "./Stage3/results_indicator027_stage3.csv")
+write.csv( dats3, "./Stage3/results_indicator027_stage3y.csv", 
+row.names = FALSE)

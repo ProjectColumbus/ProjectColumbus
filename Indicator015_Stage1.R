@@ -56,9 +56,12 @@ names(dats3) <- c("Total Households", "    Households with Computers",
 "       With a Handheld Computer", "        With Other Computer Types",
 "    Households without Computers", "        As % of Total Households")
 
+dats3 <- data.frame(concept = names(dats3), value = unname(dats3))
+
 
 # Write the final results.
-write.csv(as.data.frame(dats3), "./Stage3/results_indicator015_stage3y.csv")
+write.csv(dats3, "./Stage3/results_indicator015_stage3y.csv", 
+row.names = FALSE)
 
 
  

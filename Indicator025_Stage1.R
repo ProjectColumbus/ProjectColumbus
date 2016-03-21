@@ -72,6 +72,6 @@ attach(DESCS)
 dats3$CIP_desc <- ciplist$cip_desc[ match( dats3$CIP_code, ciplist$cip_code) ]
 
 detach(DESCS)
-Write the final results.
+# Write the final results.
 write.csv(dats3, "./Stage3/results_indicator025_stage3y.csv",row.names = FALSE)
 

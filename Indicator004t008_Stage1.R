@@ -13,6 +13,7 @@ library("openxlsx")
 
 # Create a Workbook object to be edited by the user. The user must supply
 # paticular information, which is explained in the .xlsx file to be created.
+
 wb <- createWorkbook()
 
 # Create the input data frame,with the concepts to be considered.
@@ -20,8 +21,8 @@ dats1 <- data.frame( concept = c("Private (Total)",
 "Private (% in Manufacturing)", "Public & Nonprofit", 
 "Total GERD in Services", "", "Subtotal -- Public & Nonprofit", 
 "Universities and other postsecondary institutions", 
-"Government and Nonprofit"), 
-amount = rep(NA, 8), stringsAsFactors = FALSE)
+"Government and Nonprofit", "", "Year of Data:"), 
+amount = rep(NA, 10), stringsAsFactors = FALSE)
 
 # Create formulas to obtain the total GERD.
 dats1[ dats1$concept == "Total GERD in Services", "amount"] <- 
@@ -44,7 +45,7 @@ gridExpand = TRUE)
 addStyle(wb, sheet = "GERD", style = createStyle( numFmt = "#,##0.0%", fgFill =
 "#FFF4BD"), rows = 4, cols = 2)
 addStyle(wb, sheet = 1, style = createStyle( numFmt = "#,##0.0", fgFill = 
-"#FFF4BD"), rows = c(3,9,10), cols = 2)
+"#FFF4BD"), rows = c(3,9,10,12), cols = 2)
 addStyle(wb, sheet = 1, style = createStyle( numFmt = "#,##0.0"), 
 rows = c(5,6), cols = 2)
 
@@ -73,18 +74,21 @@ produced by postsecondary educational institutions, whether private or public.
 Government and Nonprofit: the amount of GERD produced by the Government and
 non-educational nonprofit institutions."))
 
-saveWorkbook(wb, "./Stage2/Input_User.xlsx", overwrite = TRUE)
+if( !file.exists( "./Stage2/Input_User.xlsx"))
+{
+    saveWorkbook(wb, "./Stage2/Input_User.xlsx")
+}
 
 tcltk::tk_messageBox( type = "ok", message = paste( "The following file",
-" must be edited: ", DATADIR, "/Stage2/Input_User.xlsx", ".\nPlease press OK", 
+" must be edited: ", getwd(), "/Stage2/Input_User.xlsx", ".\nPlease press OK", 
 " when the file has been edited and closed.\n", sep = ""))
 
 # Read back the data and create the final results file.
 
-dats3 <- read.xlsx("./Stage2/Input_User.xlsx", rows=2:6, cols = 1:2)
+dats3 <- read.xlsx("./Stage2/Input_User.xlsx", rows=c(2:6,12), cols = 1:2)
 colnames(dats3) <- c("Main Sector", "Amount (in $ millions)")
 
-dats3[ nrow(dats3) + 1,] <- c("Total GERD (Manufacturing & Services", sum( 
+dats3[ nrow(dats3) + 1,] <- c("Total GERD (Manufacturing & Services)", sum( 
 as.numeric( dats3[ c(1,3),2 ] )) )
 
 dats3[1,1] <- "Private (Services)"; dats3[1,2] <- as.numeric(dats3[1,2]) *
@@ -92,5 +96,5 @@ dats3[1,1] <- "Private (Services)"; dats3[1,2] <- as.numeric(dats3[1,2]) *
 
 dats3 <- dats3[-2,]
 
-write.csv(dats3, "./Stage3/results_indicator004t008_stage3.csv", 
-row.names= FALSE)
+write.csv(dats3[-4,], paste("./Stage3/results_indicator004t008_stage3y_", 
+dats3[4,2], ".csv", sep = ""), row.names= FALSE)

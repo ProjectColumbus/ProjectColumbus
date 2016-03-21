@@ -47,11 +47,14 @@ hholds_pct_hispeed <- unname((dats2[ 2] - dats2[3]) / dats2[2] * 100)
 dats3 <- c(dats3[1:2], hholds_pct_hispeed = hholds_pct_hispeed,
 hholds_pct_nohispeed = 100 - hholds_pct_hispeed, dats3[4:length(dats3)])
 
-names(dats3) <- c("Total Households", "Households with an Internet
-Subscription", "% with High-Speed Internet", "% with Low-Speed Internet",
+names(dats3) <- c("Total Households", paste("Households with an Internet",
+" Subscription", sep = ""), "% with High-Speed Internet", 
+"% with Low-Speed Internet",
 "Households with Internet Access, but No Subscription",
 "Households without an Internet Connection")
 
+dats3 <- data.frame( concept = names(dats3), value = unname(dats3))
 
 # Write the final results.
-# write.csv( dats3, "./Stage3/results_indicator014_stage3y.csv")
+write.csv( dats3, "./Stage3/results_indicator014_stage3y.csv", 
+row.names = FALSE)

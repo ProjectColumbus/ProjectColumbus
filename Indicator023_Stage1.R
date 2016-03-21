@@ -15,7 +15,7 @@ library("tcltk")
 
 # Data is obtained directly from the Indicator 002 Results, for obvious
 # reasons.
-load("../Indicator002/Stage3/database_indicator002_stage3.RData")
+load(tk_choose.files(multi = FALSE))
 
 # Beginning of Name Validation
 # Some corps_900 firms split their structure into several Employer 
@@ -172,10 +172,15 @@ attach(DESCS)
 
 dats3 <- data.frame( naics_code = names(dats3), naics_desc =
 naicslist$naics_desc[ match( names(dats3), naicslist$naics_code) ], firm_num =
-dats3, stringsAsFactors = FALSE)
+unname(dats3), stringsAsFactors = FALSE)
 
 detach(DESCS)
 
+dats3 <- dats3[ order(dats3$naics_code),]
+
+dats3 <- rbind( dats3, data.frame( naics_code = "", naics_desc = "Total", 
+firm_num = sum( dats3$firm_num, na.rm = TRUE), stringsAsFactors = FALSE))
 
 # Write the final results.
-write.csv( dats3, "./Stage3/results_indicator023_stage3y.csv")
+write.csv( dats3, "./Stage3/results_indicator023_stage3y.csv", 
+row.names = FALSE)

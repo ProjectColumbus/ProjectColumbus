@@ -67,7 +67,7 @@ result_list <- lapply(instance_list, function(x)
 # R Image of Instances Made for Future Indicator Calculations
 
 save( dats3, instance_list, result_list, DATS2, file = gsub("\n", "", "./Stage3/
-database_indicator002_stage3.RData"))
+database_indicator002_stage3y.RData"))
 
 # Calculate Output of 3 Results
 

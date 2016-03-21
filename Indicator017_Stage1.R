@@ -45,7 +45,10 @@ colnames(dats3)), drop = TRUE])
 
 names( dats3) <- c("Utility", "Design", "Plant", "Reissue",
 "Total (less SIRs)", "SIRs", "Grand Total")
-#
-# # Write the final results.
-# write.csv( dats3, "./Stage3/results_indicator017_stage3.csv")
+
+dats3 <- data.frame( concept = names(dats3), value = unname(dats3))
+
+# Write the final results.
+write.csv( dats3, "./Stage3/results_indicator017_stage3y.csv",
+row.names = FALSE)
 

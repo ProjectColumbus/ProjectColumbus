@@ -1,0 +1,85 @@
+"year","naics_code","naics_title","variable","value"
+"2012",511,"Publishing Industries (except Internet)","ICT_employees",60
+"2012",5111,"Newspaper, Periodical, Book, and Directory Publishers","ICT_employees",0
+"2012",517,"Telecommunications","ICT_employees",570
+"2012",518,"Data Processing, Hosting, and Related Services","ICT_employees",420
+"2012",5191,"Other Information Services","ICT_employees",0
+"2012",5413,"Architectural, Engineering, and Related Services","ICT_employees",0
+"2012",5414,"Specialized Design Services","ICT_employees",0
+"2012",5415,"Computer Systems Design and Related Services","ICT_employees",1090
+"2012",5416,"Management, Scientific, and Technical Consulting Services","ICT_employees",420
+"2012",54171,"Research and Development in the Physical, Engineering, and Life Sciences","ICT_employees",0
+"2012",6114,"Business Schools and Computer and Management Training","ICT_employees",0
+"2012",6215,"Medical and Diagnostic Laboratories","ICT_employees",0
+"2012",6221,"General Medical and Surgical Hospitals","ICT_employees",220
+"2012",NA,"Total","ICT_employees",2780
+"2012",511,"Publishing Industries (except Internet)","ICT_employees_pct_share",0.0215827338129496
+"2012",5111,"Newspaper, Periodical, Book, and Directory Publishers","ICT_employees_pct_share",0
+"2012",517,"Telecommunications","ICT_employees_pct_share",0.205035971223022
+"2012",518,"Data Processing, Hosting, and Related Services","ICT_employees_pct_share",0.151079136690647
+"2012",5191,"Other Information Services","ICT_employees_pct_share",0
+"2012",5413,"Architectural, Engineering, and Related Services","ICT_employees_pct_share",0
+"2012",5414,"Specialized Design Services","ICT_employees_pct_share",0
+"2012",5415,"Computer Systems Design and Related Services","ICT_employees_pct_share",0.392086330935252
+"2012",5416,"Management, Scientific, and Technical Consulting Services","ICT_employees_pct_share",0.151079136690647
+"2012",54171,"Research and Development in the Physical, Engineering, and Life Sciences","ICT_employees_pct_share",0
+"2012",6114,"Business Schools and Computer and Management Training","ICT_employees_pct_share",0
+"2012",6215,"Medical and Diagnostic Laboratories","ICT_employees_pct_share",0
+"2012",6221,"General Medical and Surgical Hospitals","ICT_employees_pct_share",0.079136690647482
+"2012",NA,"Total","ICT_employees_pct_share",1
+"2013",511,"Publishing Industries (except Internet)","ICT_employees",60
+"2013",5111,"Newspaper, Periodical, Book, and Directory Publishers","ICT_employees",30
+"2013",517,"Telecommunications","ICT_employees",550
+"2013",518,"Data Processing, Hosting, and Related Services","ICT_employees",440
+"2013",5191,"Other Information Services","ICT_employees",0
+"2013",5413,"Architectural, Engineering, and Related Services","ICT_employees",0
+"2013",5414,"Specialized Design Services","ICT_employees",0
+"2013",5415,"Computer Systems Design and Related Services","ICT_employees",1040
+"2013",5416,"Management, Scientific, and Technical Consulting Services","ICT_employees",260
+"2013",54171,"Research and Development in the Physical, Engineering, and Life Sciences","ICT_employees",0
+"2013",6114,"Business Schools and Computer and Management Training","ICT_employees",0
+"2013",6215,"Medical and Diagnostic Laboratories","ICT_employees",0
+"2013",6221,"General Medical and Surgical Hospitals","ICT_employees",190
+"2013",NA,"Total","ICT_employees",2570
+"2013",511,"Publishing Industries (except Internet)","ICT_employees_pct_share",0.0233463035019455
+"2013",5111,"Newspaper, Periodical, Book, and Directory Publishers","ICT_employees_pct_share",0.0116731517509728
+"2013",517,"Telecommunications","ICT_employees_pct_share",0.214007782101167
+"2013",518,"Data Processing, Hosting, and Related Services","ICT_employees_pct_share",0.171206225680934
+"2013",5191,"Other Information Services","ICT_employees_pct_share",0
+"2013",5413,"Architectural, Engineering, and Related Services","ICT_employees_pct_share",0
+"2013",5414,"Specialized Design Services","ICT_employees_pct_share",0
+"2013",5415,"Computer Systems Design and Related Services","ICT_employees_pct_share",0.404669260700389
+"2013",5416,"Management, Scientific, and Technical Consulting Services","ICT_employees_pct_share",0.101167315175097
+"2013",54171,"Research and Development in the Physical, Engineering, and Life Sciences","ICT_employees_pct_share",0
+"2013",6114,"Business Schools and Computer and Management Training","ICT_employees_pct_share",0
+"2013",6215,"Medical and Diagnostic Laboratories","ICT_employees_pct_share",0
+"2013",6221,"General Medical and Surgical Hospitals","ICT_employees_pct_share",0.0739299610894942
+"2013",NA,"Total","ICT_employees_pct_share",1
+"2014",511,"Publishing Industries (except Internet)","ICT_employees",120
+"2014",5111,"Newspaper, Periodical, Book, and Directory Publishers","ICT_employees",0
+"2014",517,"Telecommunications","ICT_employees",590
+"2014",518,"Data Processing, Hosting, and Related Services","ICT_employees",180
+"2014",5191,"Other Information Services","ICT_employees",0
+"2014",5413,"Architectural, Engineering, and Related Services","ICT_employees",0
+"2014",5414,"Specialized Design Services","ICT_employees",0
+"2014",5415,"Computer Systems Design and Related Services","ICT_employees",980
+"2014",5416,"Management, Scientific, and Technical Consulting Services","ICT_employees",280
+"2014",54171,"Research and Development in the Physical, Engineering, and Life Sciences","ICT_employees",0
+"2014",6114,"Business Schools and Computer and Management Training","ICT_employees",0
+"2014",6215,"Medical and Diagnostic Laboratories","ICT_employees",0
+"2014",6221,"General Medical and Surgical Hospitals","ICT_employees",150
+"2014",NA,"Total","ICT_employees",2300
+"2014",511,"Publishing Industries (except Internet)","ICT_employees_pct_share",0.0521739130434783
+"2014",5111,"Newspaper, Periodical, Book, and Directory Publishers","ICT_employees_pct_share",0
+"2014",517,"Telecommunications","ICT_employees_pct_share",0.256521739130435
+"2014",518,"Data Processing, Hosting, and Related Services","ICT_employees_pct_share",0.0782608695652174
+"2014",5191,"Other Information Services","ICT_employees_pct_share",0
+"2014",5413,"Architectural, Engineering, and Related Services","ICT_employees_pct_share",0
+"2014",5414,"Specialized Design Services","ICT_employees_pct_share",0
+"2014",5415,"Computer Systems Design and Related Services","ICT_employees_pct_share",0.426086956521739
+"2014",5416,"Management, Scientific, and Technical Consulting Services","ICT_employees_pct_share",0.121739130434783
+"2014",54171,"Research and Development in the Physical, Engineering, and Life Sciences","ICT_employees_pct_share",0
+"2014",6114,"Business Schools and Computer and Management Training","ICT_employees_pct_share",0
+"2014",6215,"Medical and Diagnostic Laboratories","ICT_employees_pct_share",0
+"2014",6221,"General Medical and Surgical Hospitals","ICT_employees_pct_share",0.0652173913043478
+"2014",NA,"Total","ICT_employees_pct_share",1

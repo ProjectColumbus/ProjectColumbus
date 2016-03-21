@@ -94,6 +94,8 @@ dats3i1$total_employees
 # Combine the ICT employees and total employees into the stage 3 output.
 dats3 <- cbind( dats3i1, ICT_employees = dats3i2)
 
+dats3[ is.na(dats3) ] <- 0
+
 dats3$ICT_employees_pct_share <- prop.table(dats3$ICT_employees)
 
 load("../Master_Scripts/SectorDescs.RData")
@@ -107,8 +109,14 @@ detach(DESCS)
 
 dats3 <- dats3[ order(dats3$naics_code),]
 
+dats3 <- rbind( dats3, data.frame( naics_code = "", naics_title = "Total", 
+total_employees = sum(dats3$total_employees), ICT_employees = sum(
+dats3$ICT_employees), ICT_employees_pct_share = sum(
+dats3$ICT_employees_pct_share), stringsAsFactors = FALSE))
+
 # Save data (for use in other indicators).
 save(dats3, file = "./Stage3/database_indicator009_stage3y.RData")
 
 # Write the final results.
-write.csv( dats3, "./Stage3/results_indicator009_stage3y.csv", row.names = F)
+write.csv( dats3[ , !colnames(dats3) %in% c("total_employees")], 
+"./Stage3/results_indicator009_stage3y.csv", row.names = FALSE)

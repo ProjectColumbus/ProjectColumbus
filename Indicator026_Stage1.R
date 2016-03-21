@@ -13,5 +13,11 @@ filters = matrix( c("R Data Files", ".RData"), 1, 2, byrow = TRUE)
 load(tcltk::tk_choose.files(multi = FALSE, filters = filters))
 
 # # Select the appropriate columns, and write file.
-write.csv(dats3[,-c(6,7)], "./Stage3/results_indicator026_stage3.csv",
+
+dats3 <- aggregate( dats3[,5], by = list( cip_code = dats3[,1], 
+cip_description = dats3[,2], year = dats3[,4]), FUN = sum, na.rm = TRUE)
+
+colnames(dats3)[4] <- "N"
+
+write.csv(dats3, "./Stage3/results_indicator026_stage3y.csv",
 row.names = FALSE)

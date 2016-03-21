@@ -11,7 +11,7 @@
 library("foreign")
 
 # Read the original data.
-dats1 <- read.spss( "./Original_Data/Indicator 019t022 Database.sav", 
+dats1 <- read.spss( tcltk::tk_choose.files(multi = FALSE), 
 to.data.frame = TRUE, use.value.labels = FALSE)
 
 # Change the Variable Names according to the variable dictionary.
@@ -37,6 +37,9 @@ dats2$total_gross_receipts), dats3)
 
 names(dats3)[1] <- "ICT Investment (% of Total Gross Receipts)"
 
+dats3 <- data.frame( concept = names(dats3), value = unname(dats3))
+
 # Write the final results data.
 
-write.csv( dats3, "./Stage3/results_indicator019t022_stage3.csv")
+write.csv( dats3, "./Stage3/results_indicator019t022_stage3y.csv",
+row.names = FALSE)

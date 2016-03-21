@@ -33,7 +33,7 @@ setwd( paste( DATADIR, "/Indicator001", sep = ""))
 PARAMS <- list( 
 year = NULL,
 startRow = 6, 
-sheet = 3,
+sheet = 1,
 colNames = FALSE,
 rowNames = FALSE,
 rows = 1:405,

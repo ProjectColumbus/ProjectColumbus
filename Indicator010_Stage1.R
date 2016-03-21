@@ -66,7 +66,16 @@ component_list <- lapply( 1:length(id), function(x)
 })
 
 # Create final data frame, relabel, and write to .csv.
+
 dats3 <- do.call(rbind, component_list)
 colnames(dats3) <- c("Cohort", "Percentage of Respective Population")
 
-write.csv( dats3, "./Stage3/results_indicator010_stage3.csv", row.names = F)
+dats3$Concept <- dats3$Cohort
+dats3$Cohort <- as.character(cut(1:nrow(dats3), breaks = c(0, which( 
+dats3[,2] == "")[-1], 100000), labels = dats3[ dats3[,2] == "", 1], 
+right = FALSE))
+
+dats3 <- dats3[ -which( dats3[,2] == ""),]
+dats3 <- dats3[,c(1,3,2)]
+
+write.csv( dats3, "./Stage3/results_indicator010_stage3y.csv", row.names = F)
