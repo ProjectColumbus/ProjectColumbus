@@ -101,6 +101,7 @@ FALSE)
 detach(DESCS)
 
 dats3 <- dats3[ ,c(1,4,2,5:ncol(dats3))]
+dats3[ is.na(dats3) ] <- 0
 
 # Save as .RData, as this will be used in other indicators.
 save(dats3, file = "./Stage3/database_indicator012_stage3y.RData")

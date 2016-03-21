@@ -1,16 +1,16 @@
 "year","naics_code","naics_desc","variable","value"
-"2015Q1",5111,"Newspaper, Periodical, Book, and Directory Publishers","firm_num",30
-"2015Q1",5112,"Software Publishers","firm_num",4
-"2015Q1",517,"Telecommunications","firm_num",31
-"2015Q1",518,"Data Processing, Hosting, and Related Services","firm_num",14
-"2015Q1",51913,"Internet Publishing and Broadcasting and Web Search Portals","firm_num",3
-"2015Q1",5413,"Architectural, Engineering, and Related Services","firm_num",302
-"2015Q1",5414,"Specialized Design Services","firm_num",24
-"2015Q1",5415,"Computer Systems Design and Related Services","firm_num",118
-"2015Q1",5416,"Management, Scientific, and Technical Consulting Services","firm_num",167
-"2015Q1",541711,"Research and Development in Biotechnology ","firm_num",4
-"2015Q1",541712,"Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology) ","firm_num",10
-"2015Q1",61142,"Computer Training","firm_num",4
-"2015Q1",62151,"Medical and Diagnostic Laboratories","firm_num",390
-"2015Q1",6221,"General Medical and Surgical Hospitals","firm_num",40
-"2015Q1",NA,"Total","firm_num",1141
+"2015Q1",5111,"Newspaper, Periodical, Book, and Directory Publishers","firm_num",40
+"2015Q1",5112,"Software Publishers","firm_num",7
+"2015Q1",517,"Telecommunications","firm_num",92
+"2015Q1",518,"Data Processing, Hosting, and Related Services","firm_num",32
+"2015Q1",51913,"Internet Publishing and Broadcasting and Web Search Portals","firm_num",19
+"2015Q1",5413,"Architectural, Engineering, and Related Services","firm_num",560
+"2015Q1",5414,"Specialized Design Services","firm_num",63
+"2015Q1",5415,"Computer Systems Design and Related Services","firm_num",317
+"2015Q1",5416,"Management, Scientific, and Technical Consulting Services","firm_num",629
+"2015Q1",541711,"Research and Development in Biotechnology ","firm_num",10
+"2015Q1",541712,"Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology) ","firm_num",23
+"2015Q1",61142,"Computer Training","firm_num",6
+"2015Q1",62151,"Medical and Diagnostic Laboratories","firm_num",670
+"2015Q1",6221,"General Medical and Surgical Hospitals","firm_num",55
+"2015Q1",NA,"Total","firm_num",2523
