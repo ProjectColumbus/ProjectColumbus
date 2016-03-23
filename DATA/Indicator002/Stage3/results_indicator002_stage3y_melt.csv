@@ -1,0 +1,61 @@
+"year","naics_code","naics_desc","variable","value"
+"2015Q1",5111,"Newspaper, Periodical, Book, and Directory Publishers","emp_m1",2699
+"2015Q1",5112,"Software Publishers","emp_m1",224
+"2015Q1",517,"Telecommunications","emp_m1",9810
+"2015Q1",518,"Data Processing, Hosting, and Related Services","emp_m1",2288
+"2015Q1",51913,"Internet Publishing and Broadcasting and Web Search Portals","emp_m1",73
+"2015Q1",5413,"Architectural, Engineering, and Related Services","emp_m1",4765
+"2015Q1",5414,"Specialized Design Services","emp_m1",257
+"2015Q1",5415,"Computer Systems Design and Related Services","emp_m1",3608
+"2015Q1",5416,"Management, Scientific, and Technical Consulting Services","emp_m1",6323
+"2015Q1",541711,"Research and Development in Biotechnology ","emp_m1",636
+"2015Q1",541712,"Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology) ","emp_m1",463
+"2015Q1",61142,"Computer Training","emp_m1",155
+"2015Q1",62151,"Medical and Diagnostic Laboratories","emp_m1",5664
+"2015Q1",6221,"General Medical and Surgical Hospitals","emp_m1",31366
+"2015Q1",NA,"Total","emp_m1",68331
+"2015Q1",5111,"Newspaper, Periodical, Book, and Directory Publishers","emp_m2",2713
+"2015Q1",5112,"Software Publishers","emp_m2",225
+"2015Q1",517,"Telecommunications","emp_m2",9574
+"2015Q1",518,"Data Processing, Hosting, and Related Services","emp_m2",2262
+"2015Q1",51913,"Internet Publishing and Broadcasting and Web Search Portals","emp_m2",72
+"2015Q1",5413,"Architectural, Engineering, and Related Services","emp_m2",4806
+"2015Q1",5414,"Specialized Design Services","emp_m2",269
+"2015Q1",5415,"Computer Systems Design and Related Services","emp_m2",3582
+"2015Q1",5416,"Management, Scientific, and Technical Consulting Services","emp_m2",6348
+"2015Q1",541711,"Research and Development in Biotechnology ","emp_m2",485
+"2015Q1",541712,"Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology) ","emp_m2",479
+"2015Q1",61142,"Computer Training","emp_m2",159
+"2015Q1",62151,"Medical and Diagnostic Laboratories","emp_m2",5707
+"2015Q1",6221,"General Medical and Surgical Hospitals","emp_m2",31399
+"2015Q1",NA,"Total","emp_m2",68080
+"2015Q1",5111,"Newspaper, Periodical, Book, and Directory Publishers","emp_m3",2715
+"2015Q1",5112,"Software Publishers","emp_m3",226
+"2015Q1",517,"Telecommunications","emp_m3",9527
+"2015Q1",518,"Data Processing, Hosting, and Related Services","emp_m3",2353
+"2015Q1",51913,"Internet Publishing and Broadcasting and Web Search Portals","emp_m3",72
+"2015Q1",5413,"Architectural, Engineering, and Related Services","emp_m3",4863
+"2015Q1",5414,"Specialized Design Services","emp_m3",264
+"2015Q1",5415,"Computer Systems Design and Related Services","emp_m3",3608
+"2015Q1",5416,"Management, Scientific, and Technical Consulting Services","emp_m3",6626
+"2015Q1",541711,"Research and Development in Biotechnology ","emp_m3",380
+"2015Q1",541712,"Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology) ","emp_m3",506
+"2015Q1",61142,"Computer Training","emp_m3",166
+"2015Q1",62151,"Medical and Diagnostic Laboratories","emp_m3",5795
+"2015Q1",6221,"General Medical and Surgical Hospitals","emp_m3",31555
+"2015Q1",NA,"Total","emp_m3",68656
+"2015Q1",5111,"Newspaper, Periodical, Book, and Directory Publishers","tot_wages",25560647
+"2015Q1",5112,"Software Publishers","tot_wages",5370145
+"2015Q1",517,"Telecommunications","tot_wages",102405977
+"2015Q1",518,"Data Processing, Hosting, and Related Services","tot_wages",25885299
+"2015Q1",51913,"Internet Publishing and Broadcasting and Web Search Portals","tot_wages",799802
+"2015Q1",5413,"Architectural, Engineering, and Related Services","tot_wages",47112050
+"2015Q1",5414,"Specialized Design Services","tot_wages",1577155
+"2015Q1",5415,"Computer Systems Design and Related Services","tot_wages",42132462
+"2015Q1",5416,"Management, Scientific, and Technical Consulting Services","tot_wages",68567266
+"2015Q1",541711,"Research and Development in Biotechnology ","tot_wages",2749563
+"2015Q1",541712,"Research and Development in the Physical, Engineering, and Life Sciences (except Biotechnology) ","tot_wages",4551406
+"2015Q1",61142,"Computer Training","tot_wages",1306175
+"2015Q1",62151,"Medical and Diagnostic Laboratories","tot_wages",36771197
+"2015Q1",6221,"General Medical and Surgical Hospitals","tot_wages",215379324
+"2015Q1",NA,"Total","tot_wages",580168468

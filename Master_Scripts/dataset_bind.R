@@ -2,7 +2,7 @@ library("reshape2")
 
 ID_vars <- list(
 Indicator001 = c("naics_code", "naics_desc"),
-Indicator002 = c("NAICS", "naics_desc"),
+Indicator002 = c("naics_code", "naics_desc"),
 Indicator003 = c("occupational_code", "occupational_code_title"),
 Indicator009 = c("naics_code", "naics_title"),
 Indicator010 = c("Cohort", "Concept"),
@@ -12,6 +12,7 @@ Indicator013 = c("naics_code", "naics_title"),
 Indicator014 = c("concept"),
 Indicator015 = c("concept"),
 Indicator017 = c("concept"),
+Indicator018 = c("year"),
 Indicator023 = c("naics_code", "naics_desc"),
 Indicator025 = c("CIP_code", "CIP_desc"),
 Indicator026 = c("cip_code", "cip_description"),
@@ -38,7 +39,7 @@ file_melt <- function(rev = TRUE )
         c1 <- ID_vars[[ paste("Indicator", gsub(pattern, 
         "\\2", x),sep = "") ]]
         
-        if( any(!colnames(tmp) %in% c("variable", "year")))
+        if( length(intersect( c("variable", "year"), colnames(tmp))) == 0)
         {
             tmp <- cbind( year = gsub(pattern, "\\3", x), tmp)
             c1 <- c( "year", c1)

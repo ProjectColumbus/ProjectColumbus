@@ -69,10 +69,10 @@ dats_yrs <- Reduce(function(x,y) intersect(x,y), sapply( dats1, colnames))
 # Therefore, component 2 was created to approximate the number of academic
 # output, and then calculate the indicator. However, this is not the case,
 # and the code now uses the academic output directly from the data.
-dats3 <- as.matrix( dats2[[3]][,dats_yrs] / dats2[[1]][,dats_yrs] * 1e5 )
-rownames(dats3) <- dats_yrs
-colnames(dats3) <- gsub("\n", "", "Academic Science and Engineering Output per 
-100,000 Inhabitants")
+dats3 <- data.frame( year = dats_yrs, x = dats2[[2]][,dats_yrs] /
+dats2[[1]][,dats_yrs] * 1e6, stringsAsFactors = FALSE)
+colnames(dats3)[2] <- gsub("\n", "", "Academic Science and Engineering Output
+per Million Inhabitants")
 
 # Write the final results.
-write.csv(as.matrix(dats3), "./Stage3/results_indicator018_stage3.csv")
+write.csv(dats3, "./Stage3/results_indicator018_stage3y.csv", row.names = FALSE)
